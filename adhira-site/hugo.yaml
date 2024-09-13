@@ -1,0 +1,482 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Hugo Profile"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/lightning.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#4C3949"                # Charcoal gray for primary text
+    secondaryTextColor: "#6c757d"       # Light gray for secondary text
+    textLinkColor: "#8a2be2"            # Bright purple for links
+    backgroundColor: "#FFFFFF"          # Light gray for background
+    secondaryBackgroundColor: "#5E548E" # Moderate purple for secondary elements
+    primaryColor: "#4C3949"             # Moderate purple for primary elements
+    secondaryColor: "#F8F9FA" 
+
+    darkmode:
+      textColor: "#feecf6"
+      secondaryTextColor: "#b0b3b8"
+      textLinkColor: "#bc13fe"
+      backgroundColor: "#1A1A1A"
+      secondaryBackgroundColor: "#212529"
+      primaryColor: "#8a2be2"
+      secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Adhira Choudhury" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Adhira!"
+    subtitle: "I build innovative software solutions."
+    content: "A passionate problem solver, product developer, and entreprenur. I design software solutions that solve real-world problems."
+    image: /image.JPG
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/adhira-ch
+        - icon: fab fa-x-twitter
+          url: https://example.com
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/adhira-ch/
+      customIcons:
+        - icon: /lightning.png
+          url: "https://adhirachoudhury.me"
+  
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/grad1.JPG"
+    content: |-
+      I am Adhira Choudhury, a passionate technologist with a deep interest in artificial intelligence and its applications in transforming industries. My educational background in Computer Science from Georgia Tech has provided a strong foundation in both theoretical and practical aspects of AI. I thrive in startup environments where I can innovate and accelerate product development, blending cutting-edge technology with user-centric design to create impactful solutions.
+
+      My work spans across leveraging machine learning algorithms to enhance decision-making processes and developing scalable AI-driven products that address real-world problems. I am constantly exploring new technologies and methodologies to remain at the forefront of tech innovation, aiming to drive significant advancements in how products are conceived, built, and delivered.
+    skills:
+      enable: true
+      title: "Technologies I've been working with recently:"
+      items:
+        - "Product Development"
+        - "Machine Learning"
+        - "Data Structure & Algorithms"
+        - "Large Language Models"
+        - "Problem Solving"
+        - "Data Analytics & Visualization"
+        - "Java"
+        - "Python"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Solutions Engineer Analyst"
+        company: "Deloitte"
+        companyUrl: "https://example.com"
+        date: "September 2024 - present"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: |
+          Currently onboarding as a Solutions Engineer Analyst at Deloitte.
+
+      - job: "Summer Software Development Engineer"
+        company: "Amazon"
+        companyUrl: "https://example.com"
+        date: "May 2024 - August 2024"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        info:
+          enable: true
+        content: |
+          Implemented features for the Kindle EReader products, addressing customer issues, and ensuring performance optimization.
+            - Designed & developed 2 end-to-end Kindle reader features using C++ & React Native to address user concerns and issues, enhancing navigation & CX.</li>
+            - Created reusable software components, increasing efficiency by 20%, & wrote 30+ unit tests to achieve 90% code coverage.</li>
+            - Implemented AWS CloudWatch monitoring & integration testing with Hydra to ensure system robustness & performance.</li>
+      
+      - job: "Summer AI Analyst"
+        company: "Deloitte"
+        companyUrl: "https://example.com"
+        date: "May 2023 - August 2024"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: | 
+          Supported the Artificial Intelligence Strategic Growth Offering under Deloitte Consulting.
+          - Designed & developed 3 generative AI solutions using BART Transformer Models and Large Language Models for 3 different client projects.
+          - Implemented a Generative AI Prototype Analytics Dashboard in Tableau to showcase the internal sector-wide generative AI market and progression.
+          - Spearheaded the development of an updated sector-wide Artificial Intelligence playbook by designing 50+ slides.
+          - Designed framework and course content for firm-wide Generative AI training.
+          - Supported client artificial intelligence enabling workshops across the firm.
+
+      - job: "Full-Stack Software Engineer Intern"
+        company: "Cognosos"
+        companyUrl: "https://example.com"
+        date: "Jan 2023 - May 2023"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        content: |
+          Worked as a full-stack software engineer primarily on integrating new APIs, improving existing ones, and migrating to new API documentation.
+            - Modernized APIs by enhancing modularity and creating 85 comprehensive Swagger, user-friendly API documentation.
+            - Utilized AWS EC2 instances to enhance performance & scalability by 25%, ensuring a reliable & responsive app.
+            - Proactively improved dev. team sprints by adapting to evolving requirements and leveraging Agile methodologies.
+            - Implemented cost-effective routing of app using AWS Lambda and S3 for efficient, scalable application infrastructure.
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor of Science in Computer Science with Highest Distinction"
+        school:
+          name: "Georgia Institue of Technology"
+          url: "https://www.cc.gatech.edu/"
+        date: "August 2022 - May 2024"
+        concentration: "Artificial Intelligence & Human Computer Interactions"
+        coursework: "Data Structures and Algorithms, Artificial Intelligence, Information Visualization, Computer Organization & Programming, Statistics & Probability, Object Oriented Programming, Applied Combinatorics"
+        extracurricular: |-
+            - 🧠 Artificial Intelligence in Medicine Society (AIMS)- Executive Vice President
+            - 🩻 Big Data Big Impact- Medical Imaging Project Lead 2022-2023
+            - 💻 Big Data Big Impact- Job Scam Prediction Project Lead 2023-2024
+            - 💡 Idea2Prototype- 2022, 2023
+            - ✔️ Startup Exchange- Fall 2022 Cohort
+        content: |-
+          Graduated at the Age of 19
+            - Georgia Tech Stamps President's & Gold Scholars Semifinalist (<1.1% students awarded among 50,000+ applicants)
+            - 2x Hackathon Winner (1st Place Hackathon Overall Track Winner 2023 AI ATL + 3rd Place Hackathon Track Winner Traversal AI 2024 Hacklytics)
+            - 3rd Best Overall Georgia Tech Create-X Idea to Prototype Project
+          
+      - title: "High school Diploma with Highest Distinction"
+        school:
+          name: "Denmark High School"
+          url: "https://www.forsyth.k12.ga.us/dhs"
+        date: "August 2018 - May 2022"
+        GPA: "4.73 out of 4.0"
+        concentration: "Computer Science, Math, & Business"
+        coursework: "Object Oriented Programming, Linear Algebra, Multivariable Calculus, Statistics, Business & World"
+        extracurricular: |-
+            - FBLA (4 yrs): National Director & Founding Officer
+            - Computer Science Club (4 yrs): Co-founder & President
+            - Future of Forsyth (4 yrs): Co-founder & President
+            - Mu Alpha Theta (1 yr): President
+            - Esteemed Member of National Beta Club, National Technical Honors Society, National Honors Society
+        content: |-
+          Top 1% of Graduating Class of 500+ Students
+          
+          Key Distinguishments:
+            - National Director of Future Business Leaders of America (FBLA) & Founding Officer of Denmark FBLA
+            - 4 National Titles & 5 State Titles with Future Business Leaders of America 
+            - 2022 Claes Nobel Future Female Leader Scholar
+            - 2022 National Merit Commended Scholar + 1570 SAT Score
+            - Governor's Honors Program State Level Engineering (Computer & Software Engineering) Nominee- among the top 1% of Georgia students
+            - GaDOE Distinguished Pathway Skills, Distinguished Employability Soft Skills, & Distinguished Leadershipship Skills Award
+        # featuredLink:
+        #   enable: true
+        #   name: "My academic record"
+        #   url: "https://example.com"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: 2024 InVenture Prize Semifinalist
+        content: Recognized as a Semifinalist at the 2024 InVenture Prize for BloodSight AI.
+        url: https://inventureprize.gatech.edu/
+        # image: /images/achievment.jpg
+      - title: Georgia Tech Create-X 3rd Best Overall Idea to Prototype Project
+        content: Awarded 3rd Best Overall Idea to Prototype (I2P) Project on November 30, 2023 at the Fall 2023 Georgia Tech Create-X Idea to Prototype (I2P) Showcase.
+        url: https://create-x.gatech.edu/news/2023/12/fall-2023-i2p-showcase-teams-debut-prototypes
+        # image: /images/achievment.jpg
+      - title: Overall AI ATL Hackathon Winner- First & Largest Generative AI Hackathon in Atlanta
+        content: Won the overall AI Hackathon against 70 projects and 200+ participants. Prizes include a acceptance into Startup Exchange Fellowship, CREATE-X Startup Launch, Nintendo Switch, and $5,000 in Prodia credits.
+        url: https://devpost.com/software/partnr-consulting-copilot
+        # image: /images/achievment.jpg
+      - title: Georgia Tech Stamps President's & Gold Scholars Semifinalist
+        content: One of 175 Georgia admits and 325 national admits selected from a pool of 31,000+ Early Action applicants (<1.1%) and 50,000+ total applicants
+      - title: 2022 National Merit Commended Scholar
+        content: Scored in the 99th percentile on the PSAT/NMSQT. One of 34,000 students selected among 1.5 million PSAT/NMSQT exam takers received this recognition by the College Board.
+      - title: 2022, 2021, & 2022 AP Scholar with Distinction
+        content: Granted to students who receive an average score of at least 3.5 on all AP Exams taken, and scores of 3 or higher on five or more of these exams.
+        # image: /images/achievment.jpg
+      - title: 2022 Claes Nobel Future Female Leader Scholar
+        content: One of ten students in the U.S. selected from a pool of applications in the US to receive a $1000 scholarship.
+        url: https://www.nshss.org/scholarships/current-winners/adhira-choudhury/
+      - title: 2022 5th Place National & 3rd Place State Winner in Future Business Leader 
+        content: Recognized among 250,000+ members nationally as "The Future Business Leader", as a flagship event winner awarded by FBLA, based on business knowledge, experience, & interview performance.
+      - title: 2022 National Competitor & State Runners Up (2nd Place) in Local Chapter Annual Business Report
+        content: Recognized for quality of 15 page report & 7 minute presentation similar to an annual business review report & presentation, by FBLA
+      - title: 2021 National Community Service Achievement Award
+        content: Recognized at the National FBLA conference for 500+ Hours of Community Service
+      - title: 2021 National Runners Up (2nd Place) & State Champion in Business Plan
+        content: Recognized for quality of 15 page business plan & 7 minute presentation outling a business idea including market place, target audience, projected financial statements, and more.
+      - title: 2020 Business Achievement Award at the America Level
+        content: Recognized at the National FBLA conference for expertise in business skills including finance, law, corporate strategy, and more.
+      - title: 2020 3rd Place State Winnter- Introduction to Financial Math
+        content: Recognized for expertise in business financial statements, personal finance, and investing based on performance on an exam.
+      
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: BloodSight AI
+        content:  BloodSight AI leverages custom machine learning models to provide predictive & preventive analytics for patients & physicians with seperate portals for each.
+        # image: /images/projects/profile.png
+        featured:
+          name: Demo Presentation 
+          link: https://docs.google.com/presentation/d/1zPmpKV7CBq8DIniurgINUt1JyvrrdeOu/edit?usp=sharing&ouid=100787387853246086676&rtpof=true&sd=true
+        badges:
+          - "React.js"
+          - "Flask"
+          - "OpenAI"
+          - "SciKit Learn"
+          - "Figma"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/adhira-ch/bloodsight-ai
+      
+      - title: Partnr
+        content: A transformative tool designed to enhance how consultants manage and leverage information through generative AI and Language Learning Models (LLMs). This advanced platform utilizes OpenAI's Whisper v3 for real-time transcription of meetings and fine-tunes GPT-4 with these inputs alongside relevant emails to provide data-driven insights and intuitive project management. An AI-powered dashboard centralizes meeting transcripts, email summaries, and a chatbot interface, streamlining client interactions and project management. Developed using React, Node.js, Flask, and OpenAI technologies, Partnr integrates cutting-edge AI to revolutionize client engagements, supported by robust back-end integrations and a dynamic, user-friendly interface.
+        # image: /images/projects/profile.png
+        featured:
+          name: Demo Content
+          link: https://devpost.com/software/partnr-consulting-copilot
+        badges:
+          - "Langchain"
+          - "Meta Llama"
+          - "React.js"
+          - "Node.js"
+          - "Flask"
+          - "OpenAI"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/adhira-ch/reconsult/
+        
+      - title: van.Go
+        content: A Computer Vision and Generative AI Application that enables a user to enter a painting idea & get a painting with step-by-step canvas instructions. It's the next step to Bob Ross tutorials, position your camera, imagine, and let van.Go create.
+        # image: /images/projects/converter.jpg
+        featured:
+          name: Demo Content
+          link: https://devpost.com/software/van-go
+        badges:
+          - "Python"
+          - "React.JS"
+          - "Flask"
+          - "Scikit-Learn"
+          - "OpenAi"
+          - "Microsoft Azure"
+          - "Streamlit"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/adhira-ch/vango
+
+      - title: Seed
+        content: An user-intuitive interface that helps investors prioritize socially responsible investing. Our application includes a CSR-focused stock screener sets us apart, a real-time news feed offers a balanced perspective on companies' social impacts, & smart personalized portfolio assistance, promoting a sustainable and equitable future for all. We are helping investors identify companies that match their financial and ethical criteria.
+        # image: /images/projects/converter.jpg
+        featured:
+          name: Demo Content
+          link: https://devfolio.co/projects/seed-ba40
+        badges:
+          - "Python"
+          - "React.JS"
+          - "Flask"
+          - "Scikit-Learn"
+          - "OpenAi"
+          - "Microsoft Azure"
+          - "Streamlit"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/unnathik/seed
+
+      - title: tAI
+        content: An AI-powered learning assistant that enhances the educational experience by allowing teachers to create customizable, empathetic, and multimodal teaching assistants tailored to specific topics, emotional responses, and teaching preferences. Provides actionable insights for teachers and data-driven feedback for students, fostering a deeper understanding and engagement.
+        # image: /images/projects/converter.jpg
+        featured:
+          name: Demo Content
+          link: https://devpost.com/software/tai-personalized-teaching-assistant
+        badges:
+          - "Claude-3.5 Sonnet"
+          - "Next.js"
+          - "Hume AI"
+          - "OpenAI"
+          - "Firebase Firestore"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/unnathik/tAI
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:gurusabarisha@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/adhira-ch
+      linkedin: linkedin.com/in/adhira-choudhury/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
+
