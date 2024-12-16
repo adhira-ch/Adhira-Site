@@ -14,9 +14,10 @@ import {
   useMotionValue,
   useSpring,
   useTransform,
+  useMotionTemplate,
 } from "framer-motion";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { FaSearchengin, FaRegSun, FaMoon } from "react-icons/fa6";
 
 export const FloatingDock = ({
@@ -28,10 +29,79 @@ export const FloatingDock = ({
   desktopClassName?: string;
   mobileClassName?: string;
 }) => {
+  const [theme, setTheme] = useState("dark");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
+  };
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  }, [theme]);
+
+  const itemsWithToggle = [
+    ...items,
+    {
+      title: "Toggle Theme",
+      icon: theme === "light" ? <FaMoon /> : <FaRegSun />,
+      href: "#",
+      isLink: false,
+      onClick: toggleTheme,
+    },
+    {
+      title: "Search",
+      icon: <FaSearchengin />,
+      href: "#",
+      isLink: false,
+      onClick: () => setIsSearchOpen(true),
+    },
+  ];
+
+  const filteredItems = itemsWithToggle.filter(item =>
+    item.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <>
-      <FloatingDockDesktop items={items} className={desktopClassName} />
-      <FloatingDockMobile items={items} className={mobileClassName} />
+      <FloatingDockDesktop
+        items={filteredItems}
+        className={desktopClassName}
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        isSearchOpen={isSearchOpen}
+        setIsSearchOpen={setIsSearchOpen}
+      />
+      <FloatingDockMobile
+        items={filteredItems}
+        className={mobileClassName}
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        isSearchOpen={isSearchOpen}
+        setIsSearchOpen={setIsSearchOpen}
+      />
+      {isSearchOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-neutral-900 p-4 rounded-md">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search..."
+              className="mb-2 p-2 rounded-md bg-gray-50 dark:bg-neutral-800"
+            />
+            <button
+              onClick={() => setIsSearchOpen(false)}
+              className="mt-2 p-2 bg-red-500 text-white rounded-md"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 };
@@ -39,9 +109,17 @@ export const FloatingDock = ({
 const FloatingDockMobile = ({
   items,
   className,
+  searchQuery,
+  setSearchQuery,
+  isSearchOpen,
+  setIsSearchOpen,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; isLink?: boolean; onClick?: () => void }[];
   className?: string;
+  searchQuery: string;
+  setSearchQuery: (query: string) => void;
+  isSearchOpen: boolean;
+  setIsSearchOpen: (open: boolean) => void;
 }) => {
   const [open, setOpen] = useState(false);
   return (
@@ -69,13 +147,24 @@ const FloatingDockMobile = ({
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
-                <Link
-                  href={item.href}
-                  key={item.title}
-                  className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
-                >
-                  <div className="h-4 w-4">{item.icon}</div>
-                </Link>
+                {item.isLink ? (
+                  <Link href={item.href} key={item.title} className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center">
+                    <div className="h-4 w-4">{item.icon}</div>
+                  </Link>
+                ) : (
+                  <motion.div
+                    onClick={item.onClick}
+                    style={{ width: widthIcon, height: heightIcon }}
+                    className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
+                  >
+                    <motion.div
+                      style={{ width: widthIconStyle, height: heightIconStyle }}
+                      className="flex items-center justify-center"
+                    >
+                      {item.icon}
+                    </motion.div>
+                  </motion.div>
+                )}
               </motion.div>
             ))}
           </motion.div>
@@ -94,9 +183,17 @@ const FloatingDockMobile = ({
 const FloatingDockDesktop = ({
   items,
   className,
+  searchQuery,
+  setSearchQuery,
+  isSearchOpen,
+  setIsSearchOpen,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; isLink?: boolean; onClick?: () => void }[];
   className?: string;
+  searchQuery: string;
+  setSearchQuery: (query: string) => void;
+  isSearchOpen: boolean;
+  setIsSearchOpen: (open: boolean) => void;
 }) => {
   let mouseX = useMotionValue(Infinity);
   return (
@@ -104,7 +201,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
         className
       )}
     >
@@ -120,11 +217,15 @@ function IconContainer({
   title,
   icon,
   href,
+  isLink,
+  onClick,
 }: {
   mouseX: MotionValue;
   title: string;
   icon: React.ReactNode;
   href: string;
+  isLink?: boolean;
+  onClick?: () => void;
 }) {
   let ref = useRef<HTMLDivElement>(null);
 
@@ -166,13 +267,18 @@ function IconContainer({
     damping: 12,
   });
 
+  const widthStyle = useMotionTemplate`${width}px`;
+  const heightStyle = useMotionTemplate`${height}px`;
+  const widthIconStyle = useMotionTemplate`${widthIcon}px`;
+  const heightIconStyle = useMotionTemplate`${heightIcon}px`;
+
   const [hovered, setHovered] = useState(false);
 
-  return (
+  return isLink ? (
     <Link href={href}>
       <motion.div
         ref={ref}
-        style={{ width, height }}
+        style={{ width: widthStyle, height: heightStyle }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
@@ -190,12 +296,40 @@ function IconContainer({
           )}
         </AnimatePresence>
         <motion.div
-          style={{ width: widthIcon, height: heightIcon }}
+          style={{ width: widthIconStyle, height: heightIconStyle }}
           className="flex items-center justify-center"
         >
           {icon}
         </motion.div>
       </motion.div>
     </Link>
+  ) : (
+    <motion.div
+      ref={ref}
+      onClick={onClick}
+      style={{ width: widthStyle, height: heightStyle }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
+    >
+      <AnimatePresence>
+        {hovered && (
+          <motion.div
+            initial={{ opacity: 0, y: 10, x: "-50%" }}
+            animate={{ opacity: 1, y: 0, x: "-50%" }}
+            exit={{ opacity: 0, y: 2, x: "-50%" }}
+            className="px-2 py-0.5 whitespace-pre rounded-md bg-gray-100 border dark:bg-neutral-800 dark:border-neutral-900 dark:text-white border-gray-200 text-neutral-700 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
+          >
+            {title}
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <motion.div
+        style={{ width: widthIconStyle, height: heightIconStyle }}
+        className="flex items-center justify-center"
+      >
+        {icon}
+      </motion.div>
+    </motion.div>
   );
 }
