@@ -1,29 +1,20 @@
+import { desc } from "framer-motion/client";
 
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
+      title: "Tech enthusiast with a passion for creating AI-Driven Products.",
       description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+      className: "lg:col-span-3 md:col-span-6 md:row-span-3 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
-      spareImg: "",
-    },
-    {
-      id: 2,
-      title: "I'm very flexible with time zone communications",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "",
+      img: "/ai-gen.png",
       spareImg: "",
     },
     {
       id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
+      title: "Past Companies I've Worked At",
+      description: "Work Experience",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -31,29 +22,8 @@
       spareImg: "",
     },
     {
-      id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
-    },
-  
-    {
-      id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
-      className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-      titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
-    },
-    {
       id: 6,
-      title: "Do you want to start a project together?",
+      title: "Looking for a Collaborator? Let’s Build Something Game-Changing Together – Reach Out!",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -62,150 +32,205 @@
       spareImg: "",
     },
   ];
-  
-  export const projects = [
-    {
-      id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
-    },
-    {
-      id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
-    },
-    {
-      id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
-    },
-    {
-      id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
-    },
-  ];
-  
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
-  
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
+
+  export const about = {
+    desc: `
+    I'm Adhira (uh-DEER-ah), a Technical Product Lead and AI R&D Solutions Engineer at Deloitte Consulting, where I lead a team of seven to build trustworthy and secure AI solutions in air-gapped environments. My work focuses on developing multi-modal AI applications, such as a secure retrieval-augmented generation (RAG) chatbot leveraging NVIDIA DGX systems and advanced embeddings, and crafting Generative AI models that have driven $11 million in project sales this year. I specialize in architecting scalable AI solutions that prioritize security, reliability, and real-world impact.
+    
+    I’m also deeply invested in innovation and entrepreneurship, leading projects like *Partnr*, a context-aware consulting co-pilot integrating real-time transcription, email insights, and sentiment analysis, and *BloodSight AI*, a medical analytics platform providing personalized health insights powered by custom machine learning models.
+    
+    I graduated from Georgia Tech with Highest Honors in Computer Science, completing my degree in just two years with a focus on Artificial Intelligence and Human-Computer Interaction. My leadership included serving as Executive VP for AI for Medicine & Healthcare and leading impactful projects like the Job Scam Prediction Initiative for Big Data Big Impact.
+    
+    Hackathons are a cornerstone of my creative problem-solving. I’ve won awards at AI ATL (Google, BCG, Anthropic) and other prestigious competitions, where I showcased my ability to build innovative, deployable solutions under tight deadlines.
+    
+    Previously, I worked at Amazon, improving Kindle’s user experience and system performance, and at Cognosos, modernizing APIs and enhancing application scalability. My career is rooted in a passion for creating transformative AI-driven technologies that empower businesses and users alike.
+    `
+  };
   
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      position: "AI & ML Research Solutions Engineer Analyst",
+      company: "Deloitte",
+      startDate: "September 2024",
+      endDate: "Present",
+      desc: "- Leading a team of 7 in development of an isolated secure and trustworthy RAG product with the newest and most powerful open-source large language models and a siloed closed NVIDIA DGX environment.\n- Managed the end-to-end architecture and data flow of the trustworthy RAG product and led the development of user and technical documentation to support the deployment and demos of the system built.\n- Supporting eminence, events, and strategy development of AI in the Bioinformatics and Federal Health space.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
+      position: "Software Development Engineer",
+      company: "Amazon",
+      startDate: "May 2024",
+      endDate: "August 2024",
+      desc: "- Worked under the ReadON team at Kindle.\n- Designed & deployed 2 end-to-end Kindle features using C++ & React Native to address user concerns, enhancing navigation & customer experience (CX).\n- Created reusable software components, increasing efficiency by 20%, and wrote unit tests to achieve 90% code coverage.\n- Implemented AWS CloudWatch monitoring & integration testing with Hydra to ensure system robustness & performance.",
+      className: "md:col-span-2",
+    },
+    {
+      id: 7,
+      position: "Summer Analyst - AI Specialist",
+      company: "Deloitte Consulting",
+      startDate: "June 2023",
+      endDate: "August 2023",
+      desc: "- Supported AI growth in the Government Public Service sector.\n- Developed generative AI chatbots for Health and Education Departments using BART Transformer Models.\n- Created a Generative AI Analytics Dashboard and co-designed the firm's AI playbook and training.",
+      className: "md:col-span-2",
+    },
+    {
+      id: 6,
+      position: "Full-Stack Software Development Intern",
+      company: "Cognosos, Inc.",
+      startDate: "January 2023",
+      endDate: "May 2023",
+      desc: "- Enhanced modularity of APIs and created 85+ Swagger API documentation entries.\n- Boosted application performance by 25% using AWS EC2 instances and scalable infrastructure.\n- Supported development sprints and adapted to evolving requirements following Agile practices.",
+      className: "md:col-span-2",
+    },
+    {
+      id: 5,
+      position: "Undergraduate Research Assistant",
+      company: "CLAWS Lab @ Georgia Tech",
+      startDate: "November 2020",
+      endDate: "May 2024",
+      desc: "- Developed and integrated a web app to a multimodal ML model to study adversarial impacts on classification.\n- Conducted a user experiment and statistical analysis to identify vulnerabilities and improve model performance.\n- Built a dashboard with data visualizations showcasing model performance using responsive web technologies.",
+      className: "md:col-span-2",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
+      position: "Executive Vice President",
+      company: "Artificial Intelligence in Medicine Society (AIMS)",
+      startDate: "August 2023",
+      endDate: "May 2024",
+      desc: "- Spearheaded management of cross-functional med-tech project teams to deliver innovative solutions.\n- Coordinated events and enhanced member engagement, resulting in higher community participation.\n- Devised strategic initiatives to promote growth and sustainability of the organization.",
+      className: "md:col-span-2",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      position: "Lead Project Manager",
+      company: "Big Data Big Impact (BDBI) @ Georgia Tech",
+      startDate: "September 2022",
+      endDate: "May 2024",
+      desc: "- Led a team of 15 students to develop ML models to classify abnormal mammograms and detect job scams.\n- Researched applications of convolutional neural networks and fraud detection models.\n- Analyzed biases in a 300K+ image dataset and implemented machine learning models to improve diagnostic capabilities.",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
     },
+  ];
+  
+  
+  export const projects = [
+    {
+      id: 1,
+      title: "Partnr - Consulting Co-Pilot",
+      des: "Partnr is a generative AI-powered consulting co-pilot that is trained and fine-tuned on meetings and emails, enabling consultants, managers, and executives to interact with clients smarter and faster.",
+      img: "/partnr1.jpg",
+      iconLists: ["/openai.svg", "/whisper.svg", "/gpt.svg", "/dashboard.svg", "/atl.svg"],
+      link: "https://devpost.com/software/partnr-consulting-copilot",
+    },
+    {
+      id: 2,
+      title: "BloodSight AI - Medical Technology Solution",
+      des: "BloodSight AI enhances medical insight through analytics-driven reports for patients and physicians, providing predictive and preventive analytics with actionable insights.",
+      img: "/BloodSight.png",
+      iconLists: ["/ai.svg", "/health.svg", "/python.svg", "/data.svg", "/predictive.svg"],
+      link: "https://github.com/adhira-ch/bloodsight-ai",
+    },
+    {
+      id: 3,
+      title: "Seed: Returns Meet Responsibility",
+      des: "Seed revolutionizes investing by bridging the gap between traditional investing strategies and socially driven investing decisions, enabling investors to make informed, impactful, and ethical choices.",
+      img: "/seed.jpeg",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/data.svg", "/ethics.svg"],
+      link: "https://devfolio.co/projects/seed-ba40",
+    },
+    {
+      id: 4,
+      title: "van.Go - Custom AI Painting Tutorials",
+      des: "van.Go allows users to enter a prompt to generate a painting and overlay step-by-step visual instructions, offering interactive, multimodal painting tutorials.",
+      img: "/vanGO.png",
+      iconLists: ["/react.svg", "/tailwind.svg", "/flask.svg", "/dalle.svg", "/opencv.svg"],
+      link: "https://devpost.com/software/van-go",
+    },
+    {
+      id: 5,
+      title: "tAI: Your AI Teaching Assistant",
+      des: "tAI is a personalized AI teaching assistant that facilitates multimodal & empathetic education for students and provides professors with actionable insights on their students' engagement & learning.",
+      img: "/tAI1.jpg",
+      iconLists: ["/next.svg", "/fire.svg", "/gpt.svg", "/hume.svg", "/anthropic.svg"],
+      link: "https://devpost.com/software/tai-personalized-teaching-assistant",
+    },
+    {
+      id: 6,
+      title: "Detecting & Locating Findings in ML Screening Mammograms",
+      des: "Developed an ML model to classify and locate soft tissue findings and microcalcifications in screening mammograms, incorporating ResNet and pre-processing algorithms.",
+      img: "/p6.svg",
+      iconLists: ["/pytorch.svg", "/pandas.svg", "/ml.svg", "/resnet.svg", "/data.svg"],
+      link: "https://github.com/link-to-demo-or-info",
+    },
+    {
+      id: 7,
+      title: "Data Analysis of Adversarial Attacks on Multimodal Models",
+      des: "Analyzed the impact of adversarial attacks on multimodal classification models and built a web application to collect and analyze data from 85,000+ Tweets.",
+      img: "/p7.svg",
+      iconLists: ["/ml.svg", "/webapp.svg", "/data.svg", "/bootstrap.svg", "/html.svg"],
+      link: "https://github.com/link-to-demo-or-info",
+    }
   ];
   
   export const socialMedia = [
     {
       id: 1,
       img: "/git.svg",
+      link: "https://github.com/adhira-ch",
     },
     {
       id: 2,
       img: "/twit.svg",
+      link: "https://x.com/@adhirac31292",
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "https://www.linkedin.com/in/adhira-choudhury/",
     },
+  ];
+
+  export const skills = [
+    { skill: "Python", expertise: 5 },
+    { skill: "Java", expertise: 4 },
+    { skill: "C", expertise: 3 },
+    { skill: "C++", expertise: 4 },
+    { skill: "Assembly", expertise: 2 },
+    { skill: "HTML/CSS (MTA certified)", expertise: 5 },
+    { skill: "JavaScript (MTA & CCA certified)", expertise: 5 },
+    { skill: "Swift", expertise: 3 },
+    { skill: "SQL (MTA certified)", expertise: 4 },
+    { skill: "jQuery", expertise: 3 },
+    { skill: "JSON", expertise: 4 },
+    { skill: "Pandas", expertise: 4 },
+    { skill: "PyTorch", expertise: 3 },
+    { skill: "Jupyter", expertise: 4 },
+    { skill: "AWS", expertise: 3 },
+    { skill: "Tableau", expertise: 3 },
+    { skill: "TensorFlow", expertise: 3 },
+    { skill: "React", expertise: 4 },
+    { skill: "Node.js", expertise: 4 },
+    { skill: "D3.js", expertise: 2 },
+    { skill: "Flask", expertise: 3 },
+    { skill: "Git", expertise: 5 },
+    { skill: "Atlassian", expertise: 3 },
+    { skill: "Bootstrap", expertise: 4 },
+    { skill: "LaTeX", expertise: 3 },
+    { skill: "Machine Learning", expertise: 4 },
+    { skill: "Data Analytics & Visualization", expertise: 4 },
+    { skill: "Product Management", expertise: 4 },
+    { skill: "Problem Solving", expertise: 5 },
+    { skill: "User-Centered Design", expertise: 3 },
+    { skill: "Strategic Planning", expertise: 4 },
+    { skill: "Investing", expertise: 3 },
+    { skill: "Visionary", expertise: 4 },
+    { skill: "Ambitious", expertise: 5 },
+    { skill: "Innovative", expertise: 4 },
+    { skill: "Perseverant", expertise: 5 },
+    { skill: "Analytical", expertise: 4 },
+    { skill: "Entrepreneurial", expertise: 4 },
+    { skill: "Problem Solver", expertise: 5 },
+    { skill: "Collaborator", expertise: 4 },
+    { skill: "Adaptable", expertise: 4 },
   ];

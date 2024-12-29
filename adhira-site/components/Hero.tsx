@@ -4,6 +4,7 @@ import { TextGenerateEffect } from './ui/text-generate-effect'
 import ConnectButton from './ui/ConnectButton'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -37,7 +38,9 @@ const Hero = () => {
             <p className="text-center py-6">
               I sell and build AI products for Deloitte Consulting. I studied CS (AI/Human Interactions) at Georgia Tech and worked at Amazon, Cognosos, Georgia Tech Research, and more.
             </p>
-            <MagicButton title="More about me" icon = {<FaLocationArrow /> } position = 'right'/>
+            <Link href="/about-me">
+                <MagicButton title="More about me" icon={<FaLocationArrow />} position="right" />
+            </Link>
           </div>
         </div>
     </div>

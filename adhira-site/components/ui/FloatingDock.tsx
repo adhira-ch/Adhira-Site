@@ -1,12 +1,10 @@
-/**
- * Note: Use position fixed according to your needs
- * Desktop navbar is better positioned at the bottom
- * Mobile navbar is better positioned at bottom right.
- **/
-
-"use client"
-import { cn } from "@/lib/utils";
+"use client";
+import { useRouter } from "next/navigation";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
+import { useRef, useState, useEffect } from "react";
+import { IconHome, IconSettings } from "@tabler/icons-react";
+import { FaLaptop, FaRegUser, FaBriefcase, FaPhone, FaSearchengin, FaRegSun, FaMoon } from "react-icons/fa6";
+import { cn } from "@/lib/utils";
 import {
   AnimatePresence,
   MotionValue,
@@ -15,33 +13,88 @@ import {
   useSpring,
   useTransform,
   useMotionTemplate,
+  useScroll,
+  useMotionValueEvent,
 } from "framer-motion";
 import Link from "next/link";
-import { useRef, useState, useEffect } from "react";
-import { FaSearchengin, FaRegSun, FaMoon } from "react-icons/fa6";
 
 export const FloatingDock = ({
-  items,
   desktopClassName,
   mobileClassName,
+  currentPage,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
   desktopClassName?: string;
   mobileClassName?: string;
+  currentPage: string;
 }) => {
+  const router = useRouter();
+  const { scrollY } = useScroll();
+
+  // set true for the initial state so that nav bar is visible in the hero section
+  const [visible, setVisible] = useState(true);
+
+  useMotionValueEvent(scrollY, "change", (current) => {
+    const direction = current - scrollY.getPrevious();
+
+    if (scrollY.get() < 50) {
+      setVisible(true);
+    } else {
+      if (direction < 0) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    }
+  });
+
   const [theme, setTheme] = useState("dark");
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  useEffect(() => {
+    const initialTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+    setTheme(initialTheme);
+  }, []);
+
+  const items = [
+    {
+      title: "Home",
+      icon: <IconHome className={currentPage === "Home" ? "text-purple" : ""} />,
+      href: "/",
+      onClick: () => router.push("/"),
+    },
+    {
+      title: "About Me",
+      icon: <FaRegUser className={currentPage === "About Me" ? "text-purple" : ""} />,
+      href: "/about-me",
+      onClick: () => router.push("/about-me"),
+    },
+    {
+      title: "Projects",
+      icon: <FaLaptop className={currentPage === "Projects" ? "text-purple" : ""} />,
+      href: "/projects",
+      onClick: () => router.push("/projects"),
+    },
+    {
+      title: "Work Experience",
+      icon: <FaBriefcase className={currentPage === "Work Experience" ? "text-purple" : ""} />,
+      href: "/work-experience",
+      onClick: () => router.push("/work-experience"),
+    },
+    // {
+    //   title: "Blog",
+    //   icon: <FaPhone className={currentPage === "Blog" ? "text-purple" : ""} />,
+    //   href: "/blog",
+    //   onClick: () => router.push("/blog"),
+    // },
+    // Add more items as needed
+  ];
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-  }, [theme]);
 
   const itemsWithToggle = [
     ...items,
@@ -52,13 +105,13 @@ export const FloatingDock = ({
       isLink: false,
       onClick: toggleTheme,
     },
-    {
-      title: "Search",
-      icon: <FaSearchengin />,
-      href: "#",
-      isLink: false,
-      onClick: () => setIsSearchOpen(true),
-    },
+    // {
+    //   title: "Search",
+    //   icon: <FaSearchengin />,
+    //   href: "#",
+    //   isLink: false,
+    //   onClick: () => setIsSearchOpen(true),
+    // },
   ];
 
   const filteredItems = itemsWithToggle.filter(item =>
@@ -74,6 +127,7 @@ export const FloatingDock = ({
         setSearchQuery={setSearchQuery}
         isSearchOpen={isSearchOpen}
         setIsSearchOpen={setIsSearchOpen}
+        visible={visible}
       />
       <FloatingDockMobile
         items={filteredItems}
@@ -82,6 +136,7 @@ export const FloatingDock = ({
         setSearchQuery={setSearchQuery}
         isSearchOpen={isSearchOpen}
         setIsSearchOpen={setIsSearchOpen}
+        visible={visible}
       />
       {isSearchOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -113,6 +168,7 @@ const FloatingDockMobile = ({
   setSearchQuery,
   isSearchOpen,
   setIsSearchOpen,
+  visible,
 }: {
   items: { title: string; icon: React.ReactNode; href: string; isLink?: boolean; onClick?: () => void }[];
   className?: string;
@@ -120,6 +176,7 @@ const FloatingDockMobile = ({
   setSearchQuery: (query: string) => void;
   isSearchOpen: boolean;
   setIsSearchOpen: (open: boolean) => void;
+  visible: boolean;
 }) => {
   const [open, setOpen] = useState(false);
   return (
@@ -129,6 +186,10 @@ const FloatingDockMobile = ({
           <motion.div
             layoutId="nav"
             className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2"
+            animate={{
+              y: visible ? 0 : -100,
+              opacity: visible ? 1 : 0,
+            }}
           >
             {items.map((item, idx) => (
               <motion.div
@@ -149,20 +210,14 @@ const FloatingDockMobile = ({
               >
                 {item.isLink ? (
                   <Link href={item.href} key={item.title} className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center">
-                    <div className="h-4 w-4">{item.icon}</div>
+                    <div className={`h-4 w-4`}>{item.icon}</div>
                   </Link>
                 ) : (
                   <motion.div
                     onClick={item.onClick}
-                    style={{ width: widthIcon, height: heightIcon }}
-                    className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
+                    className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
                   >
-                    <motion.div
-                      style={{ width: widthIconStyle, height: heightIconStyle }}
-                      className="flex items-center justify-center"
-                    >
-                      {item.icon}
-                    </motion.div>
+                    <div className={`h-4 w-4`}>{item.icon}</div>
                   </motion.div>
                 )}
               </motion.div>
@@ -174,7 +229,7 @@ const FloatingDockMobile = ({
         onClick={() => setOpen(!open)}
         className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
+        <IconLayoutNavbarCollapse className="h-5 w-5 text-white dark:text-neutral-400" />
       </button>
     </div>
   );
@@ -187,6 +242,7 @@ const FloatingDockDesktop = ({
   setSearchQuery,
   isSearchOpen,
   setIsSearchOpen,
+  visible,
 }: {
   items: { title: string; icon: React.ReactNode; href: string; isLink?: boolean; onClick?: () => void }[];
   className?: string;
@@ -194,6 +250,7 @@ const FloatingDockDesktop = ({
   setSearchQuery: (query: string) => void;
   isSearchOpen: boolean;
   setIsSearchOpen: (open: boolean) => void;
+  visible: boolean;
 }) => {
   let mouseX = useMotionValue(Infinity);
   return (
@@ -204,6 +261,10 @@ const FloatingDockDesktop = ({
         "mx-auto hidden md:flex h-16 gap-4 items-end rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
         className
       )}
+      animate={{
+        y: visible ? 0 : -100,
+        opacity: visible ? 1 : 0,
+      }}
     >
       {items.map((item) => (
         <IconContainer mouseX={mouseX} key={item.title} {...item} />
@@ -297,7 +358,7 @@ function IconContainer({
         </AnimatePresence>
         <motion.div
           style={{ width: widthIconStyle, height: heightIconStyle }}
-          className="flex items-center justify-center"
+          className={`flex items-center justify-center`}
         >
           {icon}
         </motion.div>
@@ -326,7 +387,7 @@ function IconContainer({
       </AnimatePresence>
       <motion.div
         style={{ width: widthIconStyle, height: heightIconStyle }}
-        className="flex items-center justify-center"
+        className={`flex items-center justify-center`}
       >
         {icon}
       </motion.div>
