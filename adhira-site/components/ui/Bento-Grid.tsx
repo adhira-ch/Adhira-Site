@@ -4,7 +4,9 @@ import { IoCopyOutline } from "react-icons/io5";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { cn } from "@/lib/utils";
 
-import Lottie from "react-lottie";
+import dynamic from 'next/dynamic';
+
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 

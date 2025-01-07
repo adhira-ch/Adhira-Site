@@ -3,8 +3,6 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
-import MagicButton from "./ui/MagicButton";
-import Link from "next/link";
 import { Spotlight } from "./ui/Spotlight";
 
 const ProjectsFullWidget = () => {

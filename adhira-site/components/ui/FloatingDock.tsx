@@ -2,8 +2,8 @@
 import { useRouter } from "next/navigation";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import { useRef, useState, useEffect } from "react";
-import { IconHome, IconSettings } from "@tabler/icons-react";
-import { FaLaptop, FaRegUser, FaBriefcase, FaPhone, FaSearchengin, FaRegSun, FaMoon } from "react-icons/fa6";
+import { IconHome } from "@tabler/icons-react";
+import { FaLaptop, FaRegUser, FaBriefcase, FaRegSun, FaMoon } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 import {
   AnimatePresence,
@@ -28,33 +28,40 @@ export const FloatingDock = ({
   currentPage: string;
 }) => {
   const router = useRouter();
-  const { scrollY } = useScroll();
+  const { scrollY }: { scrollY: MotionValue<number> } = useScroll();
 
-  // set true for the initial state so that nav bar is visible in the hero section
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState<boolean>(true);
+  const [theme, setTheme] = useState<string>("dark");
 
-  useMotionValueEvent(scrollY, "change", (current) => {
-    const direction = current - scrollY.getPrevious();
+  // Handle scroll visibility for navbar
+  useMotionValueEvent(scrollY, "change", (current: number) => {
+    const previous = scrollY.getPrevious();
+    if (previous === undefined) return;
 
+    const direction = current - previous;
     if (scrollY.get() < 50) {
       setVisible(true);
     } else {
-      if (direction < 0) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+      setVisible(direction < 0);
     }
   });
 
-  const [theme, setTheme] = useState("dark");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const initialTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+      setTheme(initialTheme);
+    }
+  }, []);
 
   useEffect(() => {
-    const initialTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
-    setTheme(initialTheme);
-  }, []);
+    if (typeof window !== "undefined") {
+      document.documentElement.classList.toggle("dark", theme === "dark");
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
 
   const items = [
     {
@@ -81,20 +88,7 @@ export const FloatingDock = ({
       href: "/work-experience",
       onClick: () => router.push("/work-experience"),
     },
-    // {
-    //   title: "Blog",
-    //   icon: <FaPhone className={currentPage === "Blog" ? "text-purple" : ""} />,
-    //   href: "/blog",
-    //   onClick: () => router.push("/blog"),
-    // },
-    // Add more items as needed
   ];
-
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
-  };
 
   const itemsWithToggle = [
     ...items,
@@ -105,58 +99,12 @@ export const FloatingDock = ({
       isLink: false,
       onClick: toggleTheme,
     },
-    // {
-    //   title: "Search",
-    //   icon: <FaSearchengin />,
-    //   href: "#",
-    //   isLink: false,
-    //   onClick: () => setIsSearchOpen(true),
-    // },
   ];
-
-  const filteredItems = itemsWithToggle.filter(item =>
-    item.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
 
   return (
     <>
-      <FloatingDockDesktop
-        items={filteredItems}
-        className={desktopClassName}
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-        isSearchOpen={isSearchOpen}
-        setIsSearchOpen={setIsSearchOpen}
-        visible={visible}
-      />
-      <FloatingDockMobile
-        items={filteredItems}
-        className={mobileClassName}
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-        isSearchOpen={isSearchOpen}
-        setIsSearchOpen={setIsSearchOpen}
-        visible={visible}
-      />
-      {isSearchOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white dark:bg-neutral-900 p-4 rounded-md">
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search..."
-              className="mb-2 p-2 rounded-md bg-gray-50 dark:bg-neutral-800"
-            />
-            <button
-              onClick={() => setIsSearchOpen(false)}
-              className="mt-2 p-2 bg-red-500 text-white rounded-md"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+      <FloatingDockDesktop items={itemsWithToggle} className={desktopClassName} visible={visible} />
+      <FloatingDockMobile items={itemsWithToggle} className={mobileClassName} visible={visible} />
     </>
   );
 };
@@ -164,18 +112,10 @@ export const FloatingDock = ({
 const FloatingDockMobile = ({
   items,
   className,
-  searchQuery,
-  setSearchQuery,
-  isSearchOpen,
-  setIsSearchOpen,
   visible,
 }: {
   items: { title: string; icon: React.ReactNode; href: string; isLink?: boolean; onClick?: () => void }[];
   className?: string;
-  searchQuery: string;
-  setSearchQuery: (query: string) => void;
-  isSearchOpen: boolean;
-  setIsSearchOpen: (open: boolean) => void;
   visible: boolean;
 }) => {
   const [open, setOpen] = useState(false);
@@ -238,21 +178,13 @@ const FloatingDockMobile = ({
 const FloatingDockDesktop = ({
   items,
   className,
-  searchQuery,
-  setSearchQuery,
-  isSearchOpen,
-  setIsSearchOpen,
   visible,
 }: {
   items: { title: string; icon: React.ReactNode; href: string; isLink?: boolean; onClick?: () => void }[];
   className?: string;
-  searchQuery: string;
-  setSearchQuery: (query: string) => void;
-  isSearchOpen: boolean;
-  setIsSearchOpen: (open: boolean) => void;
   visible: boolean;
 }) => {
-  let mouseX = useMotionValue(Infinity);
+  const mouseX = useMotionValue(Infinity);
   return (
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
@@ -288,41 +220,40 @@ function IconContainer({
   isLink?: boolean;
   onClick?: () => void;
 }) {
-  let ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
-  let distance = useTransform(mouseX, (val) => {
-    let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
-
+  const distance = useTransform(mouseX, (val) => {
+    const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
-  let heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+  const widthTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
+  const heightTransform = useTransform(distance, [-150, 0, 150], [40, 80, 40]);
 
-  let widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
-  let heightTransformIcon = useTransform(
+  const widthTransformIcon = useTransform(distance, [-150, 0, 150], [20, 40, 20]);
+  const heightTransformIcon = useTransform(
     distance,
     [-150, 0, 150],
     [20, 40, 20]
   );
 
-  let width = useSpring(widthTransform, {
+  const width = useSpring(widthTransform, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  let height = useSpring(heightTransform, {
+  const height = useSpring(heightTransform, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
 
-  let widthIcon = useSpring(widthTransformIcon, {
+  const widthIcon = useSpring(widthTransformIcon, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
-  let heightIcon = useSpring(heightTransformIcon, {
+  const heightIcon = useSpring(heightTransformIcon, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
