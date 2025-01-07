@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "deploy": "npm run build && gh-pages -d out",
+    "static": "next build && touch ../adhira-site/out/.nojekyll && echo 'www.adhirachoudhury.com' > ./out/CNAME",
     "start": "next start",
     "lint": "next lint"
   },
