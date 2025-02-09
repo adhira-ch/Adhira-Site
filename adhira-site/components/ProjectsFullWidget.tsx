@@ -48,9 +48,8 @@ const ProjectsFullWidget = () => {
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-4"
+                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-4 dark:text-white-100 light:text-black"
                 style={{
-                  color: "#BEC1DD",
                   margin: "1vh 0",
                 }}
               >

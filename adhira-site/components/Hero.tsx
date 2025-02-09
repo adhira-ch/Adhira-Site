@@ -25,17 +25,18 @@ const Hero = () => {
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
 
-        <div className = "flex justify-center relative my-20 z-10">
+        <div className = "flex justify-center relative my-4 z-10">
           <div className = 'max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
+            <img className = "rounded-full mb-4" src={"/profile.jpg"} alt="icons" width={200} height={200} />
             <h2 className="uppercase tracking-widest text-xs text-center dark:text-blue-100 max-w-80">
-                A technical builder and product strategist
+                AI Product Innovator & Business Strategist
             </h2>
             <TextGenerateEffect
               words="Adhira Choudhury"
               className="text-[40px] md:text-5xl text-center"
             />
-            <p className="text-center py-6">
-              I sell and build AI products for Deloitte Consulting. I studied CS (AI/Human Interactions) at Georgia Tech and worked at Amazon, Cognosos, Georgia Tech Research, and more.
+            <p className="text-center py-4">
+            Building and scaling <b>AI-driven products</b> and strategies. <b>CS & AI</b> from <b>Georgia Tech</b>. Engineering, strategy, and innovation experience at <b>Deloitte, Amazon, Cognosos,</b> and more.
             </p>
             <Link href="/about-me">
                 <MagicButton title="More about me" icon={<FaLocationArrow />} position="right" />

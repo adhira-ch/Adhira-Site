@@ -20,9 +20,8 @@ const About = () => {
         About Me
       </h1>
       <p
-        className="lg:text-xl lg:font-normal font-light text-sm"
+        className="lg:text-xl lg:font-normal font-light text-sm dark:text-white-100 light:text-black"
         style={{
-          color: "#BEC1DD",
           margin: "1vh 0",
           whiteSpace: "pre-line", // Ensures line breaks from the string are rendered
         }}

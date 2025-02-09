@@ -35,17 +35,28 @@ import { desc } from "framer-motion/client";
 
   export const about = {
     desc: `
-    I'm Adhira (uh-DEER-ah), a Technical Product Lead and AI R&D Solutions Engineer at Deloitte Consulting, where I lead a team of seven to build trustworthy and secure AI solutions in air-gapped environments. My work focuses on developing multi-modal AI applications, such as a secure retrieval-augmented generation (RAG) chatbot leveraging NVIDIA DGX systems and advanced embeddings, and crafting Generative AI models that have driven $11 million in project sales this year. I specialize in architecting scalable AI solutions that prioritize security, reliability, and real-world impact.
-    
-    I’m also deeply invested in innovation and entrepreneurship, leading projects like *Partnr*, a context-aware consulting co-pilot integrating real-time transcription, email insights, and sentiment analysis, and *BloodSight AI*, a medical analytics platform providing personalized health insights powered by custom machine learning models.
-    
-    I graduated from Georgia Tech with Highest Honors in Computer Science, completing my degree in just two years with a focus on Artificial Intelligence and Human-Computer Interaction. My leadership included serving as Executive VP for AI for Medicine & Healthcare and leading impactful projects like the Job Scam Prediction Initiative for Big Data Big Impact.
-    
-    Hackathons are a cornerstone of my creative problem-solving. I’ve won awards at AI ATL (Google, BCG, Anthropic) and other prestigious competitions, where I showcased my ability to build innovative, deployable solutions under tight deadlines.
-    
-    Previously, I worked at Amazon, improving Kindle’s user experience and system performance, and at Cognosos, modernizing APIs and enhancing application scalability. My career is rooted in a passion for creating transformative AI-driven technologies that empower businesses and users alike.
-    `
+  I'm Adhira (uh-DEER-ah), an innovator, technical builder, and business strategist passionate about solving complex problems and creating end-to-end technical solutions that are impactful, scalable, and secure. I specialize in designing and deploying scalable AI-driven technologies that empower businesses to thrive in an ever-evolving landscape across industries.
+  
+  Currently, I'm a Technical Product Lead and AI R&D Solutions Engineer at Deloitte Consulting, where I lead a team of seven to build trustworthy and secure AI solutions in air-gapped environments. My work focuses on developing multi-modal AI applications such as a secure retrieval-augmented generation (RAG) chatbot leveraging NVIDIA DGX systems and advanced embeddings, and crafting Generative AI models that have driven $11 million in project sales this year. I specialize in architecting scalable AI solutions that prioritize security, reliability, and real-world impact.
+  In my role, I:
+    - Lead a team of seven to build innovative multi-modal AI solutions, including a secure retrieval-augmented generation (RAG) chatbot using NVIDIA DGX systems.
+    - Led 30+ business and technical product demos at the WEST 2025 Conference to showcase the secure multi-modal AI solution and hardware parternships.
+    - Helped generate $11 million in project sales by developing scalable Generative AI applications and mentoring developers in the fundamentals of AI software development and artifact creation (i.e. readMe and technical documentation).
+    - Support a client in implementing Deloitte’s largest government Generative AI project, collaborating with a team of 12 as an AI subject matter expert and developer.
+  
+  Beyond my work at Deloitte, I’ve led entrepreneurial ventures such as:
+    - Partnr, a context-aware consulting co-pilot integrating real-time transcription, sentiment analysis, and email insights.
+    - BloodSight AI, a personalized health analytics platform powered by custom machine learning models.
+  
+  I earned my Bachelor of Science in Computer Science with Highest Honors from Georgia Tech, completing my degree in just two years with a focus on Artificial Intelligence and Human-Computer Interaction. My leadership roles included serving as Executive VP for AI for Medicine & Healthcare and leading impactful research projects like the Job Scam Prediction Initiative for Big Data Big Impact.
+  
+  Hackathons fuel my creative problem-solving, with award-winning solutions recognized at AI ATL (sponsored by Google, BCG, and Anthropic).
+  
+  Previously, I contributed to improving Kindle's user experience at Amazon and modernizing scalable infrastructure at Cognosos. Across all experiences, my mission remains clear: to build groundbreaking technologies that solve real-world challenges and empower businesses and users alike.
+  `
   };
+  
+  
   
   export const workExperience = [
     {
@@ -128,7 +139,7 @@ import { desc } from "framer-motion/client";
       title: "BloodSight AI - Medical Technology Solution",
       des: "BloodSight AI enhances medical insight through analytics-driven reports for patients and physicians, providing predictive and preventive analytics with actionable insights.",
       img: "/BloodSight.png",
-      iconLists: ["/next.svg"],
+      iconLists: ["/ai.svg", "/health.svg", "/python.svg", "/data.svg", "/predictive.svg"],
       link: "https://github.com/adhira-ch/bloodsight-ai",
     },
     {
