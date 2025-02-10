@@ -17,7 +17,8 @@ const About = () => {
             <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
         </div>
       <h1 className="heading">
-        About Me
+        About {" "}
+        <span className="text-purple">Me</span>
       </h1>
       <p
         className="lg:text-xl lg:font-normal font-light text-sm dark:text-white-100 light:text-black"

@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Learn More
+To deploy:
+Run: npm run static
+Move out to docs: mv adhira-site/out/* docs/
+Push changes
+View at https://www.adhirachoudhury.com/
+
 ## Getting Started
 
 First, run the development server:

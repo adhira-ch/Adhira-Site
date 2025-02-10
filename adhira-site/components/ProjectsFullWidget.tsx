@@ -26,7 +26,7 @@ const ProjectsFullWidget = () => {
       <div className="flex flex-wrap justify-center gap-16 p-4 mt-10"> {/* Increased gap between cards */}
         {projects.map((item) => (
           <div
-            className="flex items-center justify-center sm:w-[35vw] w-[40vw] h-[25rem] sm:h-[28rem] lg:h-[30rem]"
+            className="flex items-center justify-center sm:w-[35vw] w-[40vw] h-[25rem] sm:h-[28rem] lg:h-[32rem]"
             key={item.id}
           >
             <PinContainer title={item.title} href={item.link}>

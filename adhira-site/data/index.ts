@@ -131,7 +131,7 @@ import { desc } from "framer-motion/client";
       title: "Partnr - Consulting Co-Pilot",
       des: "Partnr is a generative AI-powered consulting co-pilot that is trained and fine-tuned on meetings and emails, enabling consultants, managers, and executives to interact with clients smarter and faster.",
       img: "/partnr1.jpg",
-      iconLists: ["/next.svg"],
+      iconLists: ["/flask.svg", "/python.svg", "/llama-index.png", "/langchain.png", "/reactjs.svg", "/nodejs.svg", "/tailwind.svg", "/huggingface.svg"],
       link: "https://devpost.com/software/partnr-consulting-copilot",
     },
     {
@@ -139,7 +139,7 @@ import { desc } from "framer-motion/client";
       title: "BloodSight AI - Medical Technology Solution",
       des: "BloodSight AI enhances medical insight through analytics-driven reports for patients and physicians, providing predictive and preventive analytics with actionable insights.",
       img: "/BloodSight.png",
-      iconLists: ["/ai.svg", "/health.svg", "/python.svg", "/data.svg", "/predictive.svg"],
+      iconLists: ["/figma.svg", "/python.svg", "/langchain.png", "/reactjs.svg", "/openai.svg", "/random-forest.png"],
       link: "https://github.com/adhira-ch/bloodsight-ai",
     },
     {
@@ -147,7 +147,7 @@ import { desc } from "framer-motion/client";
       title: "Seed: Returns Meet Responsibility",
       des: "Seed revolutionizes investing by bridging the gap between traditional investing strategies and socially driven investing decisions, enabling investors to make informed, impactful, and ethical choices.",
       img: "/seed.jpeg",
-      iconLists: ["/next.svg"],
+      iconLists: ["/python.svg", "/scikit-learn.png", "/openai.svg", "/microsoftazure.svg", "/reactjs.svg", "/streamlit.svg"],
       link: "https://devfolio.co/projects/seed-ba40",
     },
     {
@@ -155,7 +155,7 @@ import { desc } from "framer-motion/client";
       title: "van.Go - Custom AI Painting Tutorials",
       des: "van.Go allows users to enter a prompt to generate a painting and overlay step-by-step visual instructions, offering interactive, multimodal painting tutorials.",
       img: "/vanGO.png",
-      iconLists: ["/next.svg"],
+      iconLists: ["/opencv.png", "/flask.svg", "/python.svg", "/langchain.png", "/reactjs.svg", "/nodejs.svg", "/openai.svg", "/openai.svg"],
       link: "https://devpost.com/software/van-go",
     },
     {
@@ -171,16 +171,16 @@ import { desc } from "framer-motion/client";
       title: "Detecting & Locating Findings in ML Screening Mammograms",
       des: "Developed an ML model to classify and locate soft tissue findings and microcalcifications in screening mammograms, incorporating ResNet and pre-processing algorithms.",
       img: "/p6.svg",
-      iconLists: ["/next.svg"],
-      link: "https://github.com/link-to-demo-or-info",
+      iconLists: ["/python.svg", "/opencv.png", "/scikit-learn.png", "/tensorflow.svg"],
+      link: "https://github.com/",
     },
     {
       id: 7,
       title: "Data Analysis of Adversarial Attacks on Multimodal Models",
       des: "Analyzed the impact of adversarial attacks on multimodal classification models and built a web application to collect and analyze data from 85,000+ Tweets.",
       img: "/p7.svg",
-      iconLists: ["/next.svg"],
-      link: "https://github.com/link-to-demo-or-info",
+      iconLists: ["/python.svg", "/streamlit.svg"],
+      link: "https://github.com/",
     }
   ];
   
