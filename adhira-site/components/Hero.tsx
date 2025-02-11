@@ -4,6 +4,7 @@ import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import Link from 'next/link'
+import { TypingAnimation } from './ui/Typing-Animation'
 
 const Hero = () => {
   return (
@@ -28,9 +29,12 @@ const Hero = () => {
         <div className = "flex justify-center relative my-4 z-10">
           <div className = 'max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
             <img className = "rounded-full mb-4" src={"/profile.jpg"} alt="icons" width={200} height={200} />
-            <h2 className="uppercase tracking-widest text-xs text-center dark:text-blue-100 max-w-80">
-                AI Product Innovator & Business Strategist
-            </h2>
+            <TypingAnimation
+              words={["Tech Entrepreneur", "AI Product Innovator", "Business Strategist", "AI Engineer", "Product Manager", "Technology Consultant", "Software Engineer"]}
+              duration={100}
+              delay={500}
+              className={"uppercase tracking-widest text-xs text-center dark:text-blue-100 max-w-80 min-h-5"}
+            />
             <TextGenerateEffect
               words="Adhira Choudhury"
               className="text-[40px] md:text-5xl text-center"
