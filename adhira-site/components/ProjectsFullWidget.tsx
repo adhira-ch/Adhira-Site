@@ -4,6 +4,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import { Spotlight } from "./ui/Spotlight";
+import { Lens } from "./ui/lens";
 
 const ProjectsFullWidget = () => {
   return (
@@ -23,40 +24,41 @@ const ProjectsFullWidget = () => {
         An overview of {" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap justify-center gap-16 p-4 mt-10"> {/* Increased gap between cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5 pt-12 w-full">
         {projects.map((item) => (
           <div
-            className="flex items-center justify-center sm:w-[35vw] w-[40vw] h-[25rem] sm:h-[28rem] lg:h-[32rem]"
+            className="card flex flex-col items-center justify-between p-4 pb-32 w-full h-full flex-grow"
             key={item.id}
           >
             <PinContainer title={item.title} href={item.link}>
-              <div className="relative flex items-center justify-center sm:w-[35vw] w-[40vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
+              {/* Image container */}
+              <div className="relative w-full h-64 overflow-hidden rounded-3xl mb-6">
+                <Lens
+                  zoomFactor={2}
+                  lensSize={150}
+                  isStatic={false}
+                  ariaLabel="Zoom Area"
                 >
-                </div>
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
-                />
+                  <img
+                    src={item.img}
+                    alt="cover"
+                    className="w-full h-full object-cover"
+                  />
+                </Lens>
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              {/* Title */}
+              <h1 className="font-bold md:text-xl text-base line-clamp-1 text-center w-full">
                 {item.title}
               </h1>
 
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-4 dark:text-white-100 light:text-black"
-                style={{
-                  margin: "1vh 0",
-                }}
-              >
+              {/* Description */}
+              <p className="lg:font-normal font-light text-sm line-clamp-4 dark:text-white-100 light:text-black text-center w-full my-2">
                 {item.des}
               </p>
 
-              <div className="flex items-center justify-between mt-7 mb-3">
+              {/* Footer with icons and button */}
+              <div className="flex items-center justify-between w-full mt-auto">
                 <div className="flex items-center">
                   {item.iconLists.map((icon, index) => (
                     <div
@@ -73,7 +75,7 @@ const ProjectsFullWidget = () => {
 
                 <div className="flex justify-center items-center">
                   <a href={item.link}>
-                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                    <p className="flex md:text-xs text-sm text-purple">
                       Check Site
                     </p>
                   </a>
