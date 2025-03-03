@@ -1,5 +1,34 @@
 import { desc } from "framer-motion/client";
-
+  export const featuredArticles = [
+    {
+      title: "Youth Spotlight: Driven to Succeed",
+      description: "Adhira Choudhury’s blazing accomplishments in college are a testament to what a young person with initiative and willingness to work hard can achieve. Graduating from Georgia Tech with the highest honors is rare enough. Doing so in just two years and at just 19 years of age is even more so...",
+      publisher: "Khabar Magazine",
+      image: "/khabar.jpeg",
+      link: "https://www.khabar.com/magazine/features/youth-spotlight-driven-to-succeed",
+    },
+    {
+      title: "LEAP Foundation: Bridging the Gap in Childhood Education",
+      description: "Adhira Choudhury and Swati Budarapu might look like your typical high school students, but they are anything but. The two friends have been working on developing and launching a volunteer organization called the LEAP Foundation, Leveraging Education & Academics for the Poor...",
+      publisher: "Forsyth News",
+      image: "/leap.jpg",
+      link: "https://www.forsythnews.com/life/people/leap-foundation-strives-bridge-gap-childhood-education-india/",
+    },
+    {
+      title: "NSHSS Scholarship Winner: Adhira Choudhury",
+      description: "Scholarships Awarded in 2022: Claes Nobel Future Female Leader Scholarship Claes Nobel Future Female Leader Scholarship encourages and empowers young women to assume future leadership roles in their colleges and universities, their careers, and communities and to become mentors for the young women following in their footsteps...",
+      publisher: "NSHSS",
+      image: "/nshss.png",
+      link: "https://www.nshss.org/scholarships/current-winners/adhira-choudhury/",
+    },
+    {
+      title: "Georgia Tech Create-X I2P Showcase",
+      description: "Over 40 student teams showcased products at the Fall 2023 I2P Showcase. The event was the final piece of the Idea-to-Prototype (I2P) course, a CREATE-X Make class where both undergraduate and graduate students have the opportunity to advance an invention idea toward a real product by performing basic research, analysis, building, and testing. Teams accepted into I2P receive a $500 reimbursement for physical expenses, course credit (undergraduate students only), and mentorship from a Georgia Tech faculty member. The winners for this semester’s competition include: 1st Place: NeuroChamp 2nd Place: QTACK 3rd Place: BloodSight.AI...",
+      publisher: "Create-X Georgia Tech",
+      image: "/i2p.png",
+      link: "https://create-x.gatech.edu/news/2023/12/fall-2023-i2p-showcase-teams-debut-prototypes",
+    },
+  ];
   export const gridItems = [
     {
       id: 1,
@@ -33,28 +62,35 @@ import { desc } from "framer-motion/client";
     },
   ];
 
-  export const about = {
-    desc: `
-  I'm Adhira (uh-DEER-ah), an innovator, technical builder, and business strategist passionate about solving complex problems and creating end-to-end technical solutions that are impactful, scalable, and secure. I specialize in designing and deploying scalable AI-driven technologies that empower businesses to thrive in an ever-evolving landscape across industries.
+  // export const about = {
+  //   general_desc: 
+  //     "I'm Adhira (uh-DEER-ah), an innovator, technical builder, and business strategist. With a passion for solving complex problems, I design and deploy AI-driven solutions that are impactful, scalable, and secure. My expertise lies at the intersection of AI engineering and management consulting—driving technological innovation while aligning with business goals to create measurable value.",
+  //   associated_imgs: ["undergrad.jpg", "partner.JPG", "Bloodsight_AI.jpg", "demo.jpg", "Deloitte_Demo.jpg", "Bloodsight_AI.jpg"],
+  //   current_role: 
+  //     `Currently, I’m a **Technical Product Lead & AI R&D Solutions Engineer at Deloitte Consulting**, helping clients harness AI and emerging technologies to boost efficiency and profitability. My role spans across:
+      
+  //     - **AI Strategy & Implementation**: Supporting applied research and deploying AI-driven solutions tailored to emerging business needs.
+  //     - **Technical Leadership**: Serving as both a hands-on AI engineer and technical lead, bridging the gap between development and executive decision-making.
+  //     - **Scalable AI Engineering**: Architecting **multi-modal AI applications**, such as a **secure retrieval-augmented generation (RAG) chatbot** leveraging **NVIDIA DGX systems** and advanced embeddings.
+  //     - **Business Impact**: Driving **$11M in project sales** this year through cutting-edge **Generative AI** innovations.
+      
+  //     My tech stack includes **Python, C++, React, AWS, NVIDIA Hardware, LangGraph, Llama-Index, PyTorch, NumPy**, and various associated libraries/frameworks. I specialize in developing **scalable, secure, and real-world AI solutions** that drive business transformation.`,
+  //     education: `
+  //     ### **Education & Achievements**
+      
+  //     I earned my **Bachelor of Science in Computer Science with Highest Honors from Georgia Tech**, specializing in **Artificial Intelligence & Human-Computer Interaction**. Completing my degree in **just two years at age 19**, I took on leadership roles as **Executive VP for AI for Medicine & Healthcare** and led impactful research projects like the **Job Scam Prediction Initiative for Big Data Big Impact**.
   
-  Currently, I'm a Technical Product Lead and AI R&D Solutions Engineer at Deloitte Consulting, where I lead a team of seven to build trustworthy and secure AI solutions in air-gapped environments. My work focuses on developing multi-modal AI applications such as a secure retrieval-augmented generation (RAG) chatbot leveraging NVIDIA DGX systems and advanced embeddings, and crafting Generative AI models that have driven $11 million in project sales this year. I specialize in architecting scalable AI solutions that prioritize security, reliability, and real-world impact.
-  In my role, I:
-    - Lead a team of seven to build innovative multi-modal AI solutions, including a secure retrieval-augmented generation (RAG) chatbot using NVIDIA DGX systems.
-    - Led 30+ business and technical product demos at the WEST 2025 Conference to showcase the secure multi-modal AI solution and hardware parternships.
-    - Helped generate $11 million in project sales by developing scalable Generative AI applications and mentoring developers in the fundamentals of AI software development and artifact creation (i.e. readMe and technical documentation).
-    - Support a client in implementing Deloitte’s largest government Generative AI project, collaborating with a team of 12 as an AI subject matter expert and developer.
+  //     My **hackathon experience fuels my creative problem-solving**, with award-winning solutions recognized at **AI ATL (sponsored by Google, BCG, and Anthropic)**.
+  //     `,
+  //     past_experiences: `
+  //     ### **Past Experiences**
+      
+  //     Before Deloitte, I worked at:
+  //     - **Amazon** → Enhanced the **Kindle** user experience through advanced AI-driven personalization.
+  //     - **Cognosos** → Spearheaded **scalable infrastructure modernization**, optimizing data processing pipelines.
   
-  Beyond my work at Deloitte, I’ve led entrepreneurial ventures such as:
-    - Partnr, a context-aware consulting co-pilot integrating real-time transcription, sentiment analysis, and email insights.
-    - BloodSight AI, a personalized health analytics platform powered by custom machine learning models.
-  
-  I earned my Bachelor of Science in Computer Science with Highest Honors from Georgia Tech, completing my degree in just two years with a focus on Artificial Intelligence and Human-Computer Interaction. My leadership roles included serving as Executive VP for AI for Medicine & Healthcare and leading impactful research projects like the Job Scam Prediction Initiative for Big Data Big Impact.
-  
-  Hackathons fuel my creative problem-solving, with award-winning solutions recognized at AI ATL (sponsored by Google, BCG, and Anthropic).
-  
-  Previously, I contributed to improving Kindle's user experience at Amazon and modernizing scalable infrastructure at Cognosos. Across all experiences, my mission remains clear: to build groundbreaking technologies that solve real-world challenges and empower businesses and users alike.
-  `
-  };
+  //     Across all experiences, my mission is clear: **to build groundbreaking AI-driven solutions that solve real-world challenges, drive business impact, and empower users.**`,
+  // };  
   
   
   
@@ -181,7 +217,15 @@ import { desc } from "framer-motion/client";
       img: "/dataanalytics.jpg",
       iconLists: ["/python.svg", "/streamlit.svg"],
       link: "https://github.com/",
-    }
+    },
+    {
+      id: 8,
+      title: "LEAP Foundation: Leveraging Education & Academics for the Poor",
+      des: "Led the non-profit organization for 4 years to bridge the gap in childhood education in India, providing resources and support to underprivileged students. Mobilized 90+ volunteers, raised $900+, and donated $2,000+ in supplies to benefit 300+ children through 5 academic projects and 2 partnerships, overseeing operations and driving business growth and marketing strategies.",
+      img: "/leap2.png",
+      iconLists: [],
+      link: "https://leapfoundationedu.wixsite.com/leap"
+    },
   ];
   
   export const socialMedia = [

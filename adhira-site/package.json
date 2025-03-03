@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
     "@react-three/fiber": "^8.17.10",
     "@tabler/icons-react": "^3.26.0",
     "clsx": "^2.1.1",

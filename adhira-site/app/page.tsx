@@ -1,8 +1,9 @@
 "use client";
+import { FloatingDock } from "@/components/ui/FloatingDock";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-import { FloatingDock } from "@/components/ui/FloatingDock";
+import MediaSection from "@/components/MediaSection";
 import ProjectsOverview from "@/components/ProjectsOverviewWidget";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { skills } from "@/data/index";
@@ -18,8 +19,9 @@ export default function Home() {
         />
         <Hero />
         <Grid />
-        <InfiniteMovingCards items={skills} />
+        <MediaSection />
         <ProjectsOverview />
+        <InfiniteMovingCards items={skills} />
         <Footer />
       </div>
     </main>
