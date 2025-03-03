@@ -10,7 +10,7 @@ const MediaSection = () => {
 
   return (
     <section className="py-20 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">
         Featured <span className="text-purple">In</span>
       </h2>
 
@@ -21,7 +21,7 @@ const MediaSection = () => {
             href={article.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative block w-72 bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105 hover:shadow-purple-500/50 mx-4"
+            className="group relative block w-72 rounded-xl overflow-hidden shadow-lg transition-transform transform hover:scale-105 hover:shadow-purple-500/50 mx-4"
           >
             {/* Clicking the image opens fullscreen modal */}
             <button
@@ -42,7 +42,7 @@ const MediaSection = () => {
             </button>
 
             <div className="p-4">
-              <h3 className="text-lg font-semibold text-white">{article.title}</h3>
+              <h3 className="text-lg font-semibold">{article.title}</h3>
               <p className="text-sm text-gray-400">
                 {article.description.length > 50
                   ? article.description.substring(0, 50) + "..."

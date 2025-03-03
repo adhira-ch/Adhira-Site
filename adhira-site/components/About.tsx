@@ -22,7 +22,7 @@ const About = () => {
         {/* Profile Image */}
         <div className="w-1/5">
           <Image
-            src="undergrad.jpg"
+            src="undergrad.JPG"
             alt="Adhira's Profile"
             width={300}
             height={300}
