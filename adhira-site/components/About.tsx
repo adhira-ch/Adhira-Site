@@ -44,12 +44,12 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center gap-10">
         <div className="w-4/5 text-center md:text-left">
             <p className="lg:text-lg lg:font-normal font-light text-sm dark:text-white-100 light:text-black">
-              Currently, I’m a <strong>Technical Product Lead & AI R&D Solutions Engineer at Deloitte Consulting</strong>, helping clients harness AI and emerging technologies to boost efficiency and profitability. My role spans across:
+              I recently joined <strong>McKinsey & Company as a Digital Business Analyst</strong>, helping clients harness AI and emerging technologies to boost efficiency and profitability. In the past, my role at Deloitte and Amazon has spanned across:
               <br /><br />
               - <strong>AI Strategy & Implementation</strong>: Supporting applied research and deploying AI-driven solutions tailored to emerging business needs.<br />
               - <strong>Technical Leadership</strong>: Serving as both a hands-on AI engineer and technical lead, bridging the gap between development and executive decision-making.<br />
               - <strong>Scalable AI Engineering</strong>: Architecting <strong>multi-modal AI applications</strong>, such as a <strong>secure retrieval-augmented generation (RAG) chatbot</strong> leveraging <strong>NVIDIA DGX systems</strong> and advanced embeddings.<br />
-              - <strong>Business Impact</strong>: Driving <strong>$11M in project sales</strong> this year through cutting-edge <strong>Generative AI</strong> innovations.<br /><br />
+              - <strong>Business Impact</strong>: Driving <strong>$11M in project sales</strong> through cutting-edge <strong>Generative AI</strong> innovations.<br /><br />
               My tech stack includes <strong>Python, C++, React, AWS, NVIDIA Hardware, LangGraph, Llama-Index, PyTorch, NumPy</strong>, and various associated libraries/frameworks. I specialize in developing <strong>scalable, secure, and real-world AI solutions</strong> that drive business transformation.
             </p>
           </div>
