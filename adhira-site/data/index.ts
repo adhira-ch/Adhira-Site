@@ -97,20 +97,20 @@ import { desc } from "framer-motion/client";
   export const workExperience = [
     {
       id: 1,
-      position: "Incoming Digital Business Analyst",
+      position: "Digital Business Analyst",
       company: "McKinsey & Company",
       startDate: "June 2025",
       endDate: "Present",
-      desc: "- Incoming Experienced Hire Digital BA June 2025 \n- Focused on AI and ML strategies and solutions",
+      desc: "- Driving high-impact digital transformation initiatives, with a focus on AI and ML strategy, implementation, and client delivery.",
       className: "md:col-span-2",
     },
     {
       id: 2,
-      position: "AI & ML Research Solutions Engineer Analyst",
+      position: "Product Manager & Lead AI Developer – Defense AI & Engineering",
       company: "Deloitte",
       startDate: "September 2024",
       endDate: "May 2025",
-      desc: "- Leading a team of 7 in development of an isolated secure and trustworthy RAG product with the newest and most powerful open-source large language models and a siloed closed NVIDIA DGX environment.\n- Managed the end-to-end architecture and data flow of the trustworthy RAG product and led the development of user and technical documentation to support the deployment and demos of the system built.\n- Supporting eminence, events, and strategy development of AI in the Bioinformatics and Federal Health space.",
+      desc: "- Led a cross-functional team of 7 in agile development of a secure, isolated, and trustworthy Retrieval-Augmented Generation (RAG) product using the latest open-source LLMs in a siloed NVIDIA DGX environment.\n- Supported a federal client in deploying their first production-level AI chatbot, expected to serve 40K+ users, by leading AI and backend development.\n- Owned end-to-end system architecture, data flow, and authored both user-facing and technical documentation to support deployment and stakeholder demos.\n- Advanced AI strategy and thought leadership in Bioinformatics and Federal Health through event planning, publications, and internal eminence efforts.\n- Recognized with four performance awards: two Shout Out Awards, an Applause Award, and an Outstanding Performance Award for innovation, delivery, and team leadership.",
       className: "md:col-span-2",
     },
     {
