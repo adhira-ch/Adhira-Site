@@ -97,11 +97,11 @@ import { desc } from "framer-motion/client";
   export const workExperience = [
     {
       id: 1,
-      position: "Incoming Digital Business Analyst",
+      position: "Tech and AI Business Analyst",
       company: "McKinsey & Company",
       startDate: "June 2025",
       endDate: "Present",
-      desc: "- Incoming Experienced Hire Digital BA June 2025 \n- Focused on AI and ML strategies and solutions",
+      desc: "- Driving high-impact digital transformation initiatives, with a focus on AI and ML strategy, implementation, and client delivery",
       className: "md:col-span-2",
     },
     {

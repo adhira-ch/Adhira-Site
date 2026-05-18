@@ -1,0 +1,303 @@
+{
+  "site": {
+    "name": "Adhira Choudhury",
+    "firstName": "Adhira",
+    "lastName": "Choudhury",
+    "url": "https://adhirachoudhury.com",
+    "summary": "Portfolio of Adhira Choudhury — CS, AI, and software engineering.",
+    "keywords": ["Portfolio", "Adhira Choudhury", "Computer Science", "AI"],
+    "icon": "/lightning.ico"
+  },
+  "hero": {
+    "photo": "/profile.jpg",
+    "bio": "Building and scaling **AI-driven products** and strategies. **CS & AI** from **Georgia Tech**. Engineering, strategy, and innovation experience at **Deloitte, Amazon, Cognosos**, and more.",
+    "ctaLabel": "More about me",
+    "ctaLink": "/about/"
+  },
+  "pages": {
+    "about": {
+      "title": "About",
+      "titleAccent": "me",
+      "sections": {
+        "currentRole": "Current & Recent Roles",
+        "education": "Education & Achievements",
+        "techStack": "Tech Stack"
+      }
+    },
+    "experience": {
+      "title": "Work",
+      "titleAccent": "experience",
+      "footer": "Want the full story?",
+      "footerLinkLabel": "Read more about Adhira",
+      "footerLink": "/about/"
+    },
+    "projects": {
+      "title": "An overview of",
+      "titleAccent": "recent projects",
+      "checkSiteLabel": "Check Site"
+    },
+    "skills": {
+      "title": "Skills &",
+      "titleAccent": "expertise"
+    },
+    "press": {
+      "title": "In the",
+      "titleAccent": "news",
+      "readLabel": "Read article"
+    },
+    "chatbot": {
+      "title": "Chat with",
+      "titleAccent": "Adhira",
+      "subtitle": "Ask about experience at McKinsey, Deloitte, and Amazon, projects like Partnr and BloodSight AI, education at Georgia Tech, skills, or how to get in touch."
+    },
+    "blog": {
+      "title": "Blog",
+      "emptyTitle": "No posts yet — check back soon.",
+      "emptySubtitle": "I'll share articles on AI, software engineering, and projects here."
+    }
+  },
+  "chat": {
+    "assistantName": "Portfolio Assistant",
+    "welcome": "Hi! I'm Adhira's portfolio assistant. I can answer questions about her experience, projects, education, and skills. Try a suggestion below or ask your own question.",
+    "suggestedPrompts": [
+      "What does Adhira do at McKinsey?",
+      "Tell me about BloodSight AI",
+      "What's her Deloitte AI experience?",
+      "List her top projects",
+      "Georgia Tech background",
+      "How can I contact her?"
+    ],
+    "inputPlaceholder": "Ask about Adhira's experience, projects, skills...",
+    "noKeyHint": "Offline mode — add GEMINI_API_KEY to .env.local",
+    "poweredBy": "Powered by Gemini"
+  },
+  "about": {
+    "general": "I'm Adhira (uh-DEER-ah), an innovator, technical builder, and business strategist. With a passion for solving complex problems, I design and deploy AI-driven solutions that are impactful, scalable, and secure. My expertise lies at the intersection of AI engineering and management consulting—driving technological innovation while aligning with business goals to create measurable value.",
+    "currentRole": "Currently, I'm a **Digital Business Analyst at McKinsey & Company**, driving high-impact digital transformation initiatives with a focus on AI and ML strategy, implementation, and client delivery.\n\nPreviously, I was a **Product Manager & Lead AI Developer at Deloitte Consulting** (Defense AI & Engineering), where I led a cross-functional team building secure RAG products on NVIDIA DGX, deployed a federal AI chatbot for 40K+ users, and was recognized with four performance awards.\n\nI also interned at **Amazon** (Kindle ReadON), **Deloitte** as an AI Specialist Summer Analyst, **Cognosos**, and conducted research at the **CLAWS Lab @ Georgia Tech**.",
+    "education": "I earned my **Bachelor of Science in Computer Science with Highest Honors from Georgia Tech**, specializing in **Artificial Intelligence & Human-Computer Interaction**. I completed my degree in **two years at age 19**, served as **Executive VP for AI for Medicine & Healthcare (AIMS)**, and led projects including **Job Scam Prediction** and **Medical Imaging** for Big Data Big Impact.\n\nMy hackathon experience fuels creative problem-solving, with award-winning solutions at **AI ATL** (sponsored by Google, BCG, and Anthropic).",
+    "techStack": "Python, C++, React, AWS, NVIDIA Hardware, LangGraph, Llama-Index, PyTorch, NumPy, and associated libraries/frameworks. I specialize in scalable, secure, real-world AI solutions that drive business transformation."
+  },
+  "companies": [
+    "McKinsey & Company",
+    "Deloitte",
+    "Amazon",
+    "Cognosos",
+    "Georgia Tech"
+  ],
+  "gridItems": [
+    {
+      "id": 1,
+      "title": "Tech enthusiast with a passion for creating AI-Driven Products.",
+      "description": "",
+      "img": "/ai-gen.png"
+    },
+    {
+      "id": 3,
+      "title": "Past Companies I've Worked At",
+      "description": "Work Experience",
+      "img": ""
+    },
+    {
+      "id": 6,
+      "title": "Looking for a Collaborator? Let's Build Something Game-Changing Together – Reach Out!",
+      "description": "",
+      "img": "",
+      "link": "/chatbot/",
+      "linkLabel": "Reach out"
+    }
+  ],
+  "social": [
+    { "label": "GitHub", "link": "https://github.com/adhira-ch" },
+    { "label": "X (Twitter)", "link": "https://x.com/@adhirac31292" },
+    { "label": "LinkedIn", "link": "https://www.linkedin.com/in/adhira-choudhury/" }
+  ],
+  "skills": [
+    { "skill": "Python", "expertise": 5 },
+    { "skill": "Java", "expertise": 4 },
+    { "skill": "C", "expertise": 3 },
+    { "skill": "C++", "expertise": 4 },
+    { "skill": "Assembly", "expertise": 2 },
+    { "skill": "HTML/CSS (MTA certified)", "expertise": 5 },
+    { "skill": "JavaScript (MTA & CCA certified)", "expertise": 5 },
+    { "skill": "Swift", "expertise": 3 },
+    { "skill": "SQL (MTA certified)", "expertise": 4 },
+    { "skill": "jQuery", "expertise": 3 },
+    { "skill": "JSON", "expertise": 4 },
+    { "skill": "Pandas", "expertise": 4 },
+    { "skill": "PyTorch", "expertise": 3 },
+    { "skill": "Jupyter", "expertise": 4 },
+    { "skill": "AWS", "expertise": 3 },
+    { "skill": "Tableau", "expertise": 3 },
+    { "skill": "TensorFlow", "expertise": 3 },
+    { "skill": "React", "expertise": 4 },
+    { "skill": "Node.js", "expertise": 4 },
+    { "skill": "D3.js", "expertise": 2 },
+    { "skill": "Flask", "expertise": 3 },
+    { "skill": "Git", "expertise": 5 },
+    { "skill": "Atlassian", "expertise": 3 },
+    { "skill": "Bootstrap", "expertise": 4 },
+    { "skill": "LaTeX", "expertise": 3 },
+    { "skill": "Machine Learning", "expertise": 4 },
+    { "skill": "Data Analytics & Visualization", "expertise": 4 },
+    { "skill": "Product Management", "expertise": 4 },
+    { "skill": "Problem Solving", "expertise": 5 },
+    { "skill": "User-Centered Design", "expertise": 3 },
+    { "skill": "Strategic Planning", "expertise": 4 },
+    { "skill": "Investing", "expertise": 3 },
+    { "skill": "Visionary", "expertise": 4 },
+    { "skill": "Ambitious", "expertise": 5 },
+    { "skill": "Innovative", "expertise": 4 },
+    { "skill": "Perseverant", "expertise": 5 },
+    { "skill": "Analytical", "expertise": 4 },
+    { "skill": "Entrepreneurial", "expertise": 4 },
+    { "skill": "Problem Solver", "expertise": 5 },
+    { "skill": "Collaborator", "expertise": 4 },
+    { "skill": "Adaptable", "expertise": 4 }
+  ],
+  "workExperience": [
+    {
+      "id": 1,
+      "position": "Digital Business Analyst",
+      "company": "McKinsey & Company",
+      "startDate": "June 2025",
+      "endDate": "Present",
+      "desc": "- Driving high-impact digital transformation initiatives, with a focus on AI and ML strategy, implementation, and client delivery."
+    },
+    {
+      "id": 2,
+      "position": "Product Manager & Lead AI Developer – Defense AI & Engineering",
+      "company": "Deloitte",
+      "startDate": "September 2024",
+      "endDate": "May 2025",
+      "desc": "- Led a cross-functional team of 7 in agile development of a secure, isolated, and trustworthy Retrieval-Augmented Generation (RAG) product using the latest open-source LLMs in a siloed NVIDIA DGX environment.\n- Supported a federal client in deploying their first production-level AI chatbot, expected to serve 40K+ users, by leading AI and backend development.\n- Owned end-to-end system architecture, data flow, and authored both user-facing and technical documentation to support deployment and stakeholder demos.\n- Advanced AI strategy and thought leadership in Bioinformatics and Federal Health through event planning, publications, and internal eminence efforts.\n- Recognized with four performance awards: two Shout Out Awards, an Applause Award, and an Outstanding Performance Award for innovation, delivery, and team leadership."
+    },
+    {
+      "id": 3,
+      "position": "Software Development Engineer",
+      "company": "Amazon",
+      "startDate": "May 2024",
+      "endDate": "August 2024",
+      "desc": "- Worked under the ReadON team at Kindle.\n- Designed & deployed 2 end-to-end Kindle features using C++ & React Native to address user concerns, enhancing navigation & customer experience (CX).\n- Created reusable software components, increasing efficiency by 20%, and wrote unit tests to achieve 90% code coverage.\n- Implemented AWS CloudWatch monitoring & integration testing with Hydra to ensure system robustness & performance."
+    },
+    {
+      "id": 4,
+      "position": "Summer Analyst - AI Specialist",
+      "company": "Deloitte Consulting",
+      "startDate": "June 2023",
+      "endDate": "August 2023",
+      "desc": "- Supported AI growth in the Government Public Service sector.\n- Developed generative AI chatbots for Health and Education Departments using BART Transformer Models.\n- Created a Generative AI Analytics Dashboard and co-designed the firm's AI playbook and training."
+    },
+    {
+      "id": 5,
+      "position": "Full-Stack Software Development Intern",
+      "company": "Cognosos, Inc.",
+      "startDate": "January 2023",
+      "endDate": "May 2023",
+      "desc": "- Enhanced modularity of APIs and created 85+ Swagger API documentation entries.\n- Boosted application performance by 25% using AWS EC2 instances and scalable infrastructure.\n- Supported development sprints and adapted to evolving requirements following Agile practices."
+    },
+    {
+      "id": 6,
+      "position": "Undergraduate Research Assistant",
+      "company": "CLAWS Lab @ Georgia Tech",
+      "startDate": "November 2020",
+      "endDate": "May 2024",
+      "desc": "- Developed and integrated a web app to a multimodal ML model to study adversarial impacts on classification.\n- Conducted a user experiment and statistical analysis to identify vulnerabilities and improve model performance.\n- Built a dashboard with data visualizations showcasing model performance using responsive web technologies."
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Partnr - Consulting Co-Pilot",
+      "des": "Partnr is a generative AI-powered consulting co-pilot that is trained and fine-tuned on meetings and emails, enabling consultants, managers, and executives to interact with clients smarter and faster.",
+      "img": "/partnr1.jpg",
+      "link": "https://devpost.com/software/partnr-consulting-copilot",
+      "stack": ["Python", "React", "AI"]
+    },
+    {
+      "id": 2,
+      "title": "BloodSight AI - Medical Technology Solution",
+      "des": "BloodSight AI enhances medical insight through analytics-driven reports for patients and physicians, providing predictive and preventive analytics with actionable insights.",
+      "img": "/BloodSight.png",
+      "link": "https://github.com/adhira-ch/bloodsight-ai",
+      "stack": ["Python", "PyTorch", "React", "ML"]
+    },
+    {
+      "id": 3,
+      "title": "Seed: Returns Meet Responsibility",
+      "des": "Seed revolutionizes investing by bridging the gap between traditional investing strategies and socially driven investing decisions, enabling investors to make informed, impactful, and ethical choices.",
+      "img": "/seed.jpeg",
+      "link": "https://devfolio.co/projects/seed-ba40",
+      "stack": ["React", "JavaScript", "Flask"]
+    },
+    {
+      "id": 4,
+      "title": "van.Go - Custom AI Painting Tutorials",
+      "des": "van.Go allows users to enter a prompt to generate a painting and overlay step-by-step visual instructions, offering interactive, multimodal painting tutorials.",
+      "img": "/vanGo.png",
+      "link": "https://devpost.com/software/van-go",
+      "stack": ["Python", "AI", "React"]
+    },
+    {
+      "id": 5,
+      "title": "tAI: Your AI Teaching Assistant",
+      "des": "tAI is a personalized AI teaching assistant that facilitates multimodal & empathetic education for students and provides professors with actionable insights on their students' engagement & learning.",
+      "img": "/tAI1.jpg",
+      "link": "https://devpost.com/software/tai-personalized-teaching-assistant",
+      "stack": ["Python", "AI", "React"]
+    },
+    {
+      "id": 6,
+      "title": "Detecting & Locating Findings in ML Screening Mammograms",
+      "des": "Developed an ML model to classify and locate soft tissue findings and microcalcifications in screening mammograms, incorporating ResNet and pre-processing algorithms.",
+      "img": "/medicalapp.png",
+      "link": "https://www.linkedin.com/company/gtbigdatabigimpact/",
+      "stack": ["Python", "PyTorch", "ML"]
+    },
+    {
+      "id": 7,
+      "title": "Data Analysis of Adversarial Attacks on Multimodal Models",
+      "des": "Analyzed the impact of adversarial attacks on multimodal classification models and built a web application to collect and analyze data from 85,000+ Tweets.",
+      "img": "/dataanalytics.jpg",
+      "link": "https://github.com/claws-lab/course-correct",
+      "stack": ["Python", "React", "ML"]
+    },
+    {
+      "id": 8,
+      "title": "LEAP Foundation: Leveraging Education & Academics for the Poor",
+      "des": "Led the non-profit organization for 4 years to bridge the gap in childhood education in India. Mobilized 90+ volunteers, raised $900+, and donated $2,000+ in supplies to benefit 300+ children through 5 academic projects and 2 partnerships.",
+      "img": "/leap2.png",
+      "link": "https://leapfoundationedu.wixsite.com/leap",
+      "stack": ["React", "JavaScript"]
+    }
+  ],
+  "featuredArticles": [
+    {
+      "title": "Youth Spotlight: Driven to Succeed",
+      "description": "Adhira Choudhury's blazing accomplishments in college are a testament to what a young person with initiative and willingness to work hard can achieve. Graduating from Georgia Tech with the highest honors is rare enough. Doing so in just two years and at just 19 years of age is even more so...",
+      "publisher": "Khabar Magazine",
+      "image": "/khabar.jpeg",
+      "link": "https://www.khabar.com/magazine/features/youth-spotlight-driven-to-succeed"
+    },
+    {
+      "title": "LEAP Foundation: Bridging the Gap in Childhood Education",
+      "description": "Adhira Choudhury and Swati Budarapu might look like your typical high school students, but they are anything but. The two friends have been working on developing and launching a volunteer organization called the LEAP Foundation, Leveraging Education & Academics for the Poor...",
+      "publisher": "Forsyth News",
+      "image": "/leap.jpg",
+      "link": "https://www.forsythnews.com/life/people/leap-foundation-strives-bridge-gap-childhood-education-india/"
+    },
+    {
+      "title": "NSHSS Scholarship Winner: Adhira Choudhury",
+      "description": "Scholarships Awarded in 2022: Claes Nobel Future Female Leader Scholarship encourages and empowers young women to assume future leadership roles in their colleges and universities, their careers, and communities...",
+      "publisher": "NSHSS",
+      "image": "/nshss.png",
+      "link": "https://www.nshss.org/scholarships/current-winners/adhira-choudhury/"
+    },
+    {
+      "title": "Georgia Tech Create-X I2P Showcase",
+      "description": "Over 40 student teams showcased products at the Fall 2023 I2P Showcase. Teams accepted into I2P receive mentorship from Georgia Tech faculty. The winners include: 1st Place: NeuroChamp 2nd Place: QTACK 3rd Place: BloodSight.AI...",
+      "publisher": "Create-X Georgia Tech",
+      "image": "/i2p.png",
+      "link": "https://create-x.gatech.edu/news/2023/12/fall-2023-i2p-showcase-teams-debut-prototypes"
+    }
+  ]
+}

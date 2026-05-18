@@ -30,7 +30,7 @@ const Hero = () => {
           <div className = 'max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
             <img className = "rounded-full mb-4" src={"/profile.jpg"} alt="icons" width={200} height={200} />
             <TypingAnimation
-              words={["Incoming Analyst @ McKinsey Digital", "Tech Entrepreneur", "AI Product Innovator", "Business Strategist", "AI Engineer", "Product Manager", "Technology Consultant", "Software Engineer"]}
+              words={["Business Analyst @ McKinsey Tech & AI", "Tech Entrepreneur", "AI Product Innovator", "Business Strategist", "AI Engineer", "Product Manager", "Technology Consultant", "Software Engineer"]}
               duration={100}
               delay={500}
               className={"uppercase tracking-widest text-xs text-center dark:text-blue-100 max-w-80 min-h-5"}

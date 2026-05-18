@@ -1,12 +1,13 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
-  output: 'export',
+const nextConfig: NextConfig = {
+  // Server mode for Vercel API routes (Gemini chat). Remove static export.
   images: {
-    unoptimized: true, // Disable image optimization for GitHub Pages
+    remotePatterns: [
+      { protocol: "https", hostname: "api.lorem.space" },
+      { protocol: "https", hostname: "i.ytimg.com" },
+    ],
   },
-  basePath: '', // No need for a base path when deploying directly to the branch
-  assetPrefix: '', // Leave this empty as well
 };
 
-module.exports = nextConfig;
+export default nextConfig;

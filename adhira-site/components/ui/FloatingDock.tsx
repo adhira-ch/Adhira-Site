@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import { useRef, useState, useEffect } from "react";
 import { IconHome } from "@tabler/icons-react";
-import { FaLaptop, FaRegUser, FaBriefcase, FaRegSun, FaMoon } from "react-icons/fa6";
+import { FaLaptop, FaRegUser, FaBriefcase, FaRegSun, FaMoon, FaComments } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 import {
   AnimatePresence,
@@ -87,6 +87,12 @@ export const FloatingDock = ({
       icon: <FaBriefcase className={currentPage === "Work Experience" ? "text-purple" : ""} />,
       href: "/work-experience",
       onClick: () => router.push("/work-experience"),
+    },
+    {
+      title: "Chat",
+      icon: <FaComments className={currentPage === "Chat" ? "text-purple" : ""} />,
+      href: "/chat",
+      onClick: () => router.push("/chat"),
     },
   ];
 

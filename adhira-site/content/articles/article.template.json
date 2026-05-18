@@ -1,0 +1,12 @@
+{
+  "published": false,
+  "slug": "your-article-url-slug",
+  "title": "Your article title",
+  "subtitle": "Optional one-line subtitle",
+  "date": "2026-05-17",
+  "author": "Adhira Choudhury",
+  "tags": ["AI", "Engineering"],
+  "coverImage": "/optional-cover-image.jpg",
+  "excerpt": "Short summary shown on the blog listing page (1–2 sentences).",
+  "body": "# Your headline\n\nWrite your article in **Markdown**. Paragraphs, lists, links, and code blocks are supported.\n\n## Section example\n\nMore content here."
+}
