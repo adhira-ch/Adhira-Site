@@ -9,7 +9,7 @@
     "icon": "/lightning.ico"
   },
   "hero": {
-    "photo": "/profile.jpg",
+    "photo": "/profile.png",
     "bio": "Building and scaling **AI-driven products** and strategies. **CS & AI** from **Georgia Tech**. Engineering, strategy, and innovation experience at **Deloitte, Amazon, Cognosos**, and more.",
     "ctaLabel": "More about me",
     "ctaLink": "/about/"

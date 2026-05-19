@@ -108,9 +108,9 @@ export default function ChatWidget() {
           {!open && hintVisible && (
             <motion.div
               className="chat-widget-hint"
-              initial={{ opacity: 0, x: 8 }}
+              initial={{ opacity: 0, x: -8 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 8 }}
+              exit={{ opacity: 0, x: -8 }}
               transition={{ delay: 1.2 }}
             >
               <button

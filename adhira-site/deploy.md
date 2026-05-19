@@ -184,7 +184,7 @@ After changing env vars in Vercel, **redeploy** the latest deployment (or push a
 
 ### Images missing on live site
 
-Add image files to `adhira-site/public/` (e.g. `profile.jpg`, project images), commit, and push.
+Add image files to `adhira-site/public/` (e.g. `profile.png`, project images), commit, and push.
 
 ### Local dev errors only (`ENOENT` / `_buildManifest.js.tmp`)
 

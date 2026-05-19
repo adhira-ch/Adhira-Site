@@ -111,20 +111,20 @@
 
   .chat-widget-root {
     @apply fixed z-[6000] pointer-events-none;
-    left: 1rem;
-    right: auto;
+    right: 1rem;
+    left: auto;
     bottom: 1rem;
   }
 
   @media (min-width: 640px) {
     .chat-widget-root {
-      left: 1.5rem;
+      right: 1.5rem;
       bottom: 1.5rem;
     }
   }
 
   .chat-widget-launcher-wrap {
-    @apply relative pointer-events-auto flex flex-row items-center gap-3;
+    @apply relative pointer-events-auto flex flex-row-reverse items-center gap-3;
   }
 
   .chat-widget-launcher {
@@ -162,8 +162,8 @@
 
   .chat-widget-panel {
     @apply pointer-events-auto fixed flex flex-col overflow-hidden z-[6001];
-    left: 1rem;
-    right: auto;
+    right: 1rem;
+    left: auto;
     bottom: 5.5rem;
     width: min(calc(100vw - 2rem), 400px);
     height: min(calc(100vh - 7rem), 560px);
@@ -180,7 +180,7 @@
 
   @media (min-width: 640px) {
     .chat-widget-panel {
-      left: 1.5rem;
+      right: 1.5rem;
       bottom: 6rem;
       width: min(calc(100vw - 3rem), 420px);
     }
