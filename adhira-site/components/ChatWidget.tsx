@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useState } from "react";
 import { FaComments, FaXmark } from "react-icons/fa6";
 import Chatbot from "@/components/Chatbot";
-import { chat, site } from "@/lib/content";
+import { chat } from "@/lib/content";
 
 export default function ChatWidget() {
   const pathname = usePathname();
