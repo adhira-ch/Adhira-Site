@@ -72,6 +72,8 @@ Suggested answer:
 
 ---
 
+# Professional & Career
+
 ## Profile Summary
 
 Adhira Choudhury is a Tech & AI Business Analyst at McKinsey, focused on AI strategy, GenAI and agentic AI, digital transformation, product delivery, and business-tech alignment.
@@ -172,7 +174,7 @@ She has contributed to AI learning programs, curriculum development, and capston
 
 ## Previous Experience
 
-### Deloitte Consulting — Technical Product Lead & AI R&D Solutions Engineer Analyst
+### Deloitte Consulting: Technical Product Lead & AI R&D Solutions Engineer Analyst
 
 Safe summary:
 At Deloitte, Adhira worked on AI product delivery and R&D, especially around secure GenAI, RAG, and production chatbot systems for government and defense-oriented environments.
@@ -194,7 +196,7 @@ Avoid:
 
 ---
 
-### Deloitte Consulting — AI Specialist Summer Analyst
+### Deloitte Consulting: AI Specialist Summer Analyst
 
 Safe summary:
 During her Deloitte internship, Adhira worked on GenAI prototypes, AI dashboards, training materials, roadmaps, and strategy support for government and public-sector-oriented clients.
@@ -207,7 +209,7 @@ Key points:
 
 ---
 
-### Amazon — Software Development Engineer Intern
+### Amazon: Software Development Engineer Intern
 
 Safe summary:
 At Amazon, Adhira interned as a software development engineer on Kindle-related products.
@@ -221,7 +223,7 @@ Key points:
 
 ---
 
-### Cognosos — Full-Stack Software Engineering Intern
+### Cognosos: Full-Stack Software Engineering Intern
 
 Safe summary:
 At Cognosos, Adhira worked on full-stack software engineering for an IoT/asset-tracking context.
@@ -295,7 +297,7 @@ Avoid:
 
 ## Projects
 
-### Partnr — Consulting Co-Pilot
+### Partnr: Consulting Co-Pilot
 
 Safe summary:
 Partnr was an AI consulting co-pilot project that combined meeting transcription, project context, summarization, and chatbot-style retrieval to help consulting teams manage information more effectively.
@@ -311,7 +313,7 @@ Suggested answer:
 
 ---
 
-### BloodSight AI — Medical Analytics Solution
+### BloodSight AI: Medical Analytics Solution
 
 Safe summary:
 BloodSight AI is a healthcare analytics project focused on helping patients and clinicians contextualize medical information and generate personalized insights.
@@ -347,7 +349,7 @@ Key points:
 
 ---
 
-### tAI — Personalized AI Teaching Assistant
+### tAI: Personalized AI Teaching Assistant
 
 Safe summary:
 tAI explored how AI could support personalized learning through student-facing assistance and instructor-facing analytics.
@@ -448,54 +450,17 @@ Only mention high school-specific awards if the user asks about high school, FBL
 
 ---
 
-## Personal Interests and Personality
-
-This section can be expanded later.
-
-Current safe interests:
-- Exploring new cities
-- Traveling for work and fun
-- Working out
-- Tennis
-- Big Roger Federer fan
-- Acrylic painting
-- Design and creative projects
-- Healthcare AI
-- Education equity
-- Building useful AI products
-- Hackathons and startup-style projects
-
-Personality:
-- High energy
-- Curious
-- Builder mindset
-- Enjoys turning ambiguous ideas into real products
-- Likes the intersection of creativity, technology, and impact
-
-Potential future additions:
-- Favorite cities
-- Favorite books
-- Favorite design inspirations
-- Favorite AI tools
-- Favorite travel stories
-- Favorite tennis memories
-- More about painting style
-- Personal values and working style
-
----
-
 ## Collaboration Topics
 
 Adhira may be a good person to reach out to for:
 - AI product collaborations
-- GenAI or RAG projects
-- Agentic AI concepts
+- GenAI or RAG builds
+- Agentic AI builds
 - Hackathons
 - Startups
-- Healthcare AI
+- MedTech / Healthcare AI
 - Education technology
 - AI strategy and digital transformation
-- Speaking or mentoring
 - Product and engineering conversations
 
 Contact route:
@@ -560,10 +525,220 @@ Yes. Adhira played tennis in high school and still loves the sport. She is also 
 Partnr, an AI consulting co-pilot that won AI ATL, and BloodSight AI, a healthcare analytics project recognized through Georgia Tech startup programs.
 
 ### What is she interested in outside work?
-She likes traveling, exploring cities, working out, tennis, Roger Federer, acrylic painting, design, education equity, and building creative AI products.
+She likes traveling (favorites include Auckland, Agra, and Puerto Carillo), working out (pilates, tennis, volleyball), Mediterranean and Indian food, cooking high-protein meals, The Weeknd and classic Bollywood, Indian history and mythology, piano, and creative projects like painting and design.
 
 ### Can she collaborate on a project?
 For serious collaboration inquiries, the best next step is to reach out on LinkedIn: https://www.linkedin.com/in/adhira-choudhury/
+
+---
+
+# Personal & Fun
+
+## Personal Interests and Personality
+
+Tone for this section:
+- Light, warm, and conversational, like a friend sharing fun facts, not a resume.
+- Okay to be playful for hobbies, food, music, and culture questions.
+- Do not invent funny stories or personal details that are not listed below.
+
+Current safe interests:
+- Exploring new cities
+- Traveling for work and fun
+- Working out
+- Tennis
+- Big Roger Federer fan
+- Acrylic painting
+- Design and creative projects
+- Healthcare AI
+- Education equity
+- Building useful AI products
+- Hackathons and startup-style projects
+
+Personality:
+- High energy
+- Curious
+- Builder mindset
+- Enjoys turning ambiguous ideas into real products
+- Likes the intersection of creativity, technology, and impact
+
+---
+
+### Zodiac
+
+- Capricorn
+
+Positive Capricorn traits (safe to mention in a light, fun way; do not overdo astrology or stereotype):
+- Ambitious and goal-oriented
+- Disciplined and hardworking
+- Responsible and reliable
+- Patient and strategic; thinks long-term
+- Practical and grounded
+- Resilient and persistent under pressure
+- Loyal and steady in relationships
+- Mature leadership energy; builds structure and follows through
+
+Traits that often resonate with how people describe Adhira:
+- High ownership and follow-through
+- Comfortable with ambiguity but still drives toward results
+- Builder mindset and curiosity
+
+Keep zodiac answers brief and playful unless the user wants a deeper dive.
+
+---
+
+### Food and dining
+
+Favorite cuisines:
+- Mediterranean
+
+Apps and tools:
+- Beli: restaurant list-keeping app she likes to use
+
+Cooking at home:
+- Loves finding sneaky ways to make food healthy at home (especially high-protein)
+- Current cooking obsession: spinach, cottage cheese, and chickpea pasta
+
+Sample answer:
+“She’s into Mediterranean food, uses the Beli app to keep track of restaurants she wants to try, and likes hacking meals to be healthier at home. Right now she’s obsessed with a spinach, cottage cheese, and chickpea pasta.”
+
+---
+
+### Music and pop culture
+
+- Pop
+- A bit of Bollywood
+- Likes The Weeknd
+- Loves classic Bollywood movies
+
+Suggested answer:
+“Her music taste is mostly pop. She likes The Weeknd, with some Bollywood, and she’s really into classic Bollywood films.”
+
+---
+
+### Colors and aesthetics
+
+Favorite colors:
+- Lavender (primary)
+- Light blue
+- Blush pink
+
+Suggested answer:
+“Her favorite color is lavender, and she also likes light blue and blush pink.”
+
+---
+
+### Culture and heritage
+
+- From Odisha (Orissa), India
+- Indian heritage
+- Really loves learning about Indian history and mythology
+
+Favorite Indian foods:
+- Pani puri
+- Chaat
+- Butter chicken masala and garlic naan
+
+Favorite festivals:
+- Diwali
+- Ganesha Puja
+- Prathamastami: Odia festival celebrating the older child
+
+Family:
+- Has a younger sister (almost 10 years younger)
+
+Safe to mention when users ask about background, culture, languages, food, or family. Keep it warm and brief unless they want more detail.
+
+---
+
+### Languages
+
+Languages she knows:
+- English
+- Hindi
+- Odia (Oriya)
+- Spanish
+- French
+
+Suggested answer:
+“She speaks English, Hindi, and Odia, and has studied Spanish and French as well.”
+
+Do not claim native-level fluency unless the user provides that detail later.
+
+---
+
+### People she admires (personal / fun context)
+
+Favorite public figures and role models (safe to mention in casual conversation):
+- Mark Cuban
+- Indra Nooyi
+- Jensen Huang
+- Roger Federer
+- Hrithik Roshan
+
+Suggested answer:
+“She admires a mix of business and tech leaders like Indra Nooyi, Jensen Huang, and Mark Cuban, plus Roger Federer and Hrithik Roshan.”
+
+---
+
+### Travel and cities
+
+Top places she has visited and loved:
+- Auckland, New Zealand
+- Agra, India (loved the Taj Mahal)
+- Puerto Carillo, Puerto Rico
+
+Countries she wants to visit:
+- Switzerland (for the views and Roger Federer)
+- Bali
+- Greece
+- Japan
+
+Suggested answer:
+“Some of her favorite trips have been Auckland, Agra to see the Taj Mahal, and Puerto Carillo in Puerto Rico. On her bucket list are Switzerland (partly for the views and Federer), plus Bali, Greece, and Japan.”
+
+---
+
+### Fitness, hobbies, and fun skills
+
+Workouts she loves:
+- Pilates
+- Tennis
+- A little volleyball
+- General gym workouts (can leg press 500 lbs)
+
+Other skills:
+- Can play the piano
+- Double-jointed wrists
+
+Suggested answer:
+“She loves working out, especially pilates, tennis, and a bit of volleyball, plus serious gym days (she can leg press 500 lbs). She also plays piano and has double-jointed wrists.”
+
+---
+
+### Funny stories
+
+(Add specific stories here when ready. Until then, do not invent anecdotes.)
+
+Placeholder topics to expand later:
+- Travel mishaps
+- Hackathon chaos
+- Tennis or sports moments
+- Food adventures
+- Work-travel funny moments (non-confidential only)
+
+---
+
+### Potential future additions
+
+Ideas to fill in over time (do not answer as facts until added above):
+- Favorite books, podcasts, and shows
+- Favorite design inspirations
+- Favorite AI tools for fun
+- Funny stories (travel, hackathon, tennis, food)
+- Painting style and creative hobbies
+- Personal values and working style
+- Coffee vs tea, morning routine
+- Pets
 
 ---
 

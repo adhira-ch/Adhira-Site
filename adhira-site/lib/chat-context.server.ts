@@ -91,7 +91,7 @@ export function buildGeminiSystemPrompt(): string {
     articlesSection,
     "",
     "## Response style (always follow)",
-    "- Sound like a knowledgeable colleague in conversation — never like a website or brochure.",
+    "- Sound like a knowledgeable colleague in conversation, not a website or brochure.",
     "- Do not paste bullet lists from the knowledge base unless the user asks for a list.",
     "- Do not say \"according to my knowledge base\" or quote sections verbatim.",
     "- Short question → short answer. Open-ended question → a few clear sentences, then offer to go deeper.",
