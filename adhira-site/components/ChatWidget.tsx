@@ -53,7 +53,7 @@ export default function ChatWidget() {
             <motion.div
               role="dialog"
               aria-modal="true"
-              aria-label={`Chat with ${site.firstName}'s portfolio assistant`}
+              aria-label={`Chat with ${chat.assistantName}`}
               className="chat-widget-panel"
               initial={{ opacity: 0, y: 24, scale: 0.96 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -72,7 +72,7 @@ export default function ChatWidget() {
           className="chat-widget-launcher"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
-          aria-label={open ? "Close chat" : "Open chat assistant"}
+          aria-label={open ? "Close chat" : `Open ${chat.assistantName}`}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -121,7 +121,7 @@ export default function ChatWidget() {
               >
                 <FaXmark className="w-3 h-3" />
               </button>
-              Ask about {site.firstName}&apos;s work
+              {chat.widgetHint}
             </motion.div>
           )}
         </AnimatePresence>

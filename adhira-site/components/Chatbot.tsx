@@ -33,6 +33,7 @@ export default function Chatbot({ variant = "page", onClose }: ChatbotProps) {
   const [geminiReady, setGeminiReady] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const consecutiveErrorsRef = useRef(0);
 
   useEffect(() => {
     fetch("/api/chat")
@@ -83,20 +84,25 @@ export default function Chatbot({ variant = "page", onClose }: ChatbotProps) {
 
     try {
       const { reply, mode: responseMode } = await sendChatMessage(history);
+      consecutiveErrorsRef.current = 0;
       setMode(responseMode);
       setMessages((prev) => [
         ...prev,
         { id: createId(), role: "assistant", content: reply },
       ]);
     } catch {
+      consecutiveErrorsRef.current += 1;
+      const errorMessage =
+        consecutiveErrorsRef.current > 2
+          ? chat.errorPersistent
+          : chat.errorBusy;
       setMode("local");
       setMessages((prev) => [
         ...prev,
         {
           id: createId(),
           role: "assistant",
-          content:
-            "Sorry, I couldn't reach Gemini. Please try again, or check that your API key is valid in .env.local.",
+          content: errorMessage,
         },
       ]);
     } finally {
@@ -111,6 +117,7 @@ export default function Chatbot({ variant = "page", onClose }: ChatbotProps) {
   };
 
   const clearChat = () => {
+    consecutiveErrorsRef.current = 0;
     setMessages([{ ...WELCOME, id: "welcome" }]);
     setMode(null);
     inputRef.current?.focus();
@@ -154,9 +161,7 @@ export default function Chatbot({ variant = "page", onClose }: ChatbotProps) {
               {chat.assistantName}
             </p>
             <p className="text-xs text-neutral-500 dark:text-neutral-400 truncate">
-              {isWidget
-                ? `Ask about ${site.firstName}'s portfolio`
-                : `Ask about ${site.firstName}'s work, projects & background`}
+              {isWidget ? chat.taglineWidget : chat.taglinePage}
             </p>
           </div>
         </div>

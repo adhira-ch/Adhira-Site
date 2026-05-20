@@ -32,12 +32,17 @@ export default function ChatPage() {
       />
 
       <div className="relative z-10 max-w-3xl w-full mx-auto pt-32 pb-8">
-        <h1 className="text-center text-3xl sm:text-4xl font-bold mb-8 text-neutral-900 dark:text-white tracking-tight">
+        <h1 className="text-center text-3xl sm:text-4xl font-bold mb-3 text-neutral-900 dark:text-white tracking-tight">
           {t.title}{" "}
           <span className="bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
             {t.titleAccent}
           </span>
         </h1>
+        {t.subtitle && (
+          <p className="text-center text-sm sm:text-base text-neutral-600 dark:text-neutral-400 max-w-xl mx-auto mb-8 leading-relaxed">
+            {t.subtitle}
+          </p>
+        )}
         <Chatbot variant="page" />
       </div>
 
