@@ -101,7 +101,7 @@ import { desc } from "framer-motion/client";
       company: "McKinsey & Company",
       startDate: "June 2025",
       endDate: "Present",
-      desc: "- Shape AI and ML strategy, then lead delivery, taking GenAI and agentic AI from concept through testing, rollout, and measured business impact.",
+      desc: "Industries: Banking, Healthcare, TMT, and MedTech.\n- Reimagined workflows with agentic AI and automation across two domains, working directly with executives.\n- Designed the UI and led cross-functional delivery for an agentic AI claims-automation proof of concept, with ~$10M in projected annual savings.\n- Diagnosed the issues in a procurement AI product, redesigned its architecture, and set AI-enabled SDLC best practices.\n- Led UAT and deployment strategy for two AI back-office solutions, reaching ~90% accuracy and ~$20M in projected savings.",
       className: "md:col-span-2",
     },
     {
