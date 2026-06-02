@@ -48,7 +48,7 @@
     "chatbot": {
       "title": "Meet",
       "titleAccent": "Adhira's Digital Clone",
-      "subtitle": "An AI twin trained on her career, projects, and interests. Ask anything. It thinks fast, paraphrases like a human, and never leaks confidential work details."
+      "subtitle": "An AI twin trained on Adhira's career, projects, and interests. Ask it anything. It answers in seconds and keeps confidential client work private."
     },
     "blog": {
       "title": "Notes",
@@ -58,23 +58,23 @@
   },
   "chat": {
     "assistantName": "Adhira's Digital Clone",
-    "taglinePage": "Neural sync online · career, projects, and background",
-    "taglineWidget": "Ask the clone anything",
-    "welcome": "Hey, I'm Adhira's Digital Clone. Think of me as her AI twin on this site. I can walk you through her work at McKinsey and Deloitte, projects like Partnr and BloodSight AI, Georgia Tech, hobbies, and how to reach the real Adhira. Pick a prompt or ask your own question.",
-    "widgetHint": "Chat with Adhira's clone",
+    "taglinePage": "Trained on Adhira's career, projects, and background",
+    "taglineWidget": "Ask anything about Adhira",
+    "welcome": "Hi, I'm Adhira's digital clone, an AI twin trained on her work and background. I can walk you through her roles at McKinsey and Deloitte, projects like Partnr and BloodSight AI, her time at Georgia Tech, her interests, and how to reach the real Adhira. Pick a prompt below, or ask your own question.",
+    "widgetHint": "Chat with Adhira's AI twin",
     "suggestedPrompts": [
       "What does Adhira do at McKinsey?",
       "Tell me about BloodSight AI",
-      "What's her Deloitte AI experience?",
+      "What's her AI experience at Deloitte?",
       "What are her hobbies?",
-      "Georgia Tech background",
-      "How can I contact her?"
+      "What did she study at Georgia Tech?",
+      "How can I reach her?"
     ],
-    "inputPlaceholder": "Message the digital clone...",
-    "noKeyHint": "Local clone mode",
-    "poweredBy": "Clone engine · Gemini",
-    "errorBusy": "Hmmm, seems like Adhira is busy right now try again and she'll get back to you!",
-    "errorPersistent": "Mhm, seems like there is some issue try again in a few hours"
+    "inputPlaceholder": "Ask about Adhira's work, projects, or background...",
+    "noKeyHint": "Local mode",
+    "poweredBy": "Powered by Gemini",
+    "errorBusy": "The clone is handling a lot of requests right now. Give it a few seconds and try again.",
+    "errorPersistent": "Something isn't working on my end. Please try again a little later."
   },
   "about": {
     "general": "I'm Adhira (uh-DEER-ah). I build AI products and shape the strategy that scales them, and I understand both from the model architecture up to the business case. For clients, that means I can set the AI direction, prototype the system, lead the team that ships it, and make the case for why it matters to the business. I do this at scale, and I care most about pointing AI at hard, high-stakes problems, in healthcare, the public sector, and the way knowledge work gets done.",
