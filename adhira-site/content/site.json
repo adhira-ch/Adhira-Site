@@ -4,13 +4,13 @@
     "firstName": "Adhira",
     "lastName": "Choudhury",
     "url": "https://adhirachoudhury.com",
-    "summary": "Adhira Choudhury builds AI products and the strategy to take them to scale, with the technical depth to architect them and the business sense to ship them.",
+    "summary": "Adhira Choudhury shapes AI strategy and builds the products to deliver it, from architecture to business case.",
     "keywords": ["Adhira Choudhury", "AI products", "AI strategy", "Generative AI", "Machine Learning", "Computer Science", "Georgia Tech"],
     "icon": "/profile.png"
   },
   "hero": {
     "photo": "/profile.png",
-    "bio": "I build **AI products** and the strategy to take them to scale. **CS & AI from Georgia Tech**, finished in two years. I've shipped a federal GenAI system now used by **40,000+ people**, led AI product teams at **Deloitte**, engineered at **Amazon**, and now shape AI strategy at **McKinsey**.",
+    "bio": "I build **AI products** and the strategy to scale them. **CS & AI from Georgia Tech** in two years. I've shipped a federal GenAI system used by **40,000+ people**, led AI teams at **Deloitte**, engineered at **Amazon**, and now shape AI strategy at **McKinsey**.",
     "ctaLabel": "More about me",
     "ctaLink": "/about/"
   },
@@ -48,7 +48,7 @@
     "chatbot": {
       "title": "Meet",
       "titleAccent": "Adhira's Digital Clone",
-      "subtitle": "An AI twin trained on Adhira's career, projects, and interests. Ask it anything. It answers in seconds and keeps confidential client work private."
+      "subtitle": "An AI twin trained on Adhira's career, projects, and interests. Ask anything; it answers in seconds and keeps confidential client work private."
     },
     "blog": {
       "title": "Notes",
@@ -60,7 +60,7 @@
     "assistantName": "Adhira's Digital Clone",
     "taglinePage": "Trained on Adhira's career, projects, and background",
     "taglineWidget": "Ask anything about Adhira",
-    "welcome": "Hi, I'm Adhira's digital clone, an AI twin trained on her work and background. I can walk you through her roles at McKinsey and Deloitte, projects like Partnr and BloodSight AI, her time at Georgia Tech, her interests, and how to reach the real Adhira. Pick a prompt below, or ask your own question.",
+    "welcome": "Hi, I'm Adhira's digital clone, trained on her work and background. I can cover her roles at McKinsey and Deloitte, projects like Partnr and BloodSight AI, Georgia Tech, her interests, and how to reach the real Adhira. Pick a prompt below, or ask your own.",
     "widgetHint": "Chat with Adhira's AI twin",
     "suggestedPrompts": [
       "What does Adhira do at McKinsey?",
@@ -77,8 +77,8 @@
     "errorPersistent": "Something isn't working on my end. Please try again a little later."
   },
   "about": {
-    "general": "I'm Adhira (uh-DEER-ah). I build AI products and shape the strategy that scales them, and I understand both from the model architecture up to the business case. For clients, that means I can set the AI direction, prototype the system, lead the team that ships it, and make the case for why it matters to the business. I do this at scale, and I care most about pointing AI at hard, high-stakes problems, in healthcare, the public sector, and the way knowledge work gets done.",
-    "currentRole": "Today I'm a **Tech & AI Business Analyst at McKinsey & Company**, where I shape AI and GenAI strategy and help clients turn ambiguous problems into AI systems that ship and get measured.\n\nBefore McKinsey, I was a **Product Manager and Lead AI Developer at Deloitte** (Defense AI & Engineering). I led a seven-person team building secure retrieval-augmented generation products on NVIDIA DGX, shipped a federal AI chatbot now serving **40,000+ users**, and earned four performance awards.\n\nEarlier, I engineered Kindle features at **Amazon**, worked AI strategy as a summer analyst at **Deloitte**, built full-stack systems at **Cognosos**, and ran machine-learning research at the **CLAWS Lab at Georgia Tech**.",
+    "general": "I'm Adhira (uh-DEER-ah). I help clients shape their data, tech, and AI strategy, then build and scale the AI products behind it. My work spans the full arc, from strengthening enterprise architecture to helping clients capture real value. I've defined the value case for multi-year AI programs, reimagined entire domains, built prototypes and moved them into production, set data strategy, and upskilled executives. I've done this across defense, medtech, healthcare, TMT, and banking. What I care about most is solving the problem. And at heart, I'm still a tech nerd.",
+    "currentRole": "Today I'm a **Tech & AI Business Analyst at McKinsey & Company**, where I shape AI and GenAI strategy and turn clients' ambiguous problems into AI systems that ship and get measured.\n\nBefore McKinsey, I was a **Product Manager and Lead AI Developer at Deloitte** (Defense AI & Engineering). I led a seven-person team building secure retrieval-augmented generation products on NVIDIA DGX, shipped a federal AI chatbot serving **40,000+ users**, and earned four performance awards.\n\nEarlier, I engineered Kindle features at **Amazon**, ran AI strategy as a summer analyst at **Deloitte**, built full-stack systems at **Cognosos**, and did machine-learning research at the **CLAWS Lab at Georgia Tech**.",
     "education": "I earned a **B.S. in Computer Science with Highest Honors from Georgia Tech**, specializing in **Artificial Intelligence and Human-Computer Interaction**, and I finished the degree in **two years, at 19**. I served as **Executive VP of AI for Medicine & Healthcare (AIMS)** and led Big Data Big Impact projects on **job-scam detection** and **medical imaging**.\n\nMy hackathon record includes award-winning work at **AI ATL**, sponsored by Google, BCG, and Anthropic.",
     "techStack": "Python, C++, React, AWS, NVIDIA hardware, LangGraph, LlamaIndex, PyTorch, and NumPy. I build AI systems that hold up in production: secure, evaluated, and tied to a real outcome."
   },
@@ -92,7 +92,7 @@
   "gridItems": [
     {
       "id": 1,
-      "title": "A builder who ships AI products, and understands them down to the architecture.",
+      "title": "A builder who ships AI products and understands them down to the architecture.",
       "description": "",
       "img": "/ai-gen.png"
     },
