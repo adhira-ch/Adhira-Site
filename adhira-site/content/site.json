@@ -4,13 +4,13 @@
     "firstName": "Adhira",
     "lastName": "Choudhury",
     "url": "https://adhirachoudhury.com",
-    "summary": "Portfolio of Adhira Choudhury — CS, AI, and software engineering.",
-    "keywords": ["Portfolio", "Adhira Choudhury", "Computer Science", "AI"],
-    "icon": "/lightning.ico"
+    "summary": "Adhira Choudhury builds AI products and the strategy to take them to scale, with the technical depth to architect them and the business sense to ship them.",
+    "keywords": ["Adhira Choudhury", "AI products", "AI strategy", "Generative AI", "Machine Learning", "Computer Science", "Georgia Tech"],
+    "icon": "/profile.png"
   },
   "hero": {
     "photo": "/profile.png",
-    "bio": "Building and scaling **AI-driven products** and strategies. **CS & AI** from **Georgia Tech**. Engineering, strategy, and innovation experience at **Deloitte, Amazon, Cognosos**, and more.",
+    "bio": "I build **AI products** and the strategy to take them to scale. **CS & AI from Georgia Tech**, finished in two years. I've shipped a federal GenAI system now used by **40,000+ people**, led AI product teams at **Deloitte**, engineered at **Amazon**, and now shape AI strategy at **McKinsey**.",
     "ctaLabel": "More about me",
     "ctaLink": "/about/"
   },
@@ -51,9 +51,9 @@
       "subtitle": "An AI twin trained on her career, projects, and interests. Ask anything. It thinks fast, paraphrases like a human, and never leaks confidential work details."
     },
     "blog": {
-      "title": "Blog",
-      "emptyTitle": "No posts yet — check back soon.",
-      "emptySubtitle": "I'll share articles on AI, software engineering, and projects here."
+      "title": "Notes",
+      "emptyTitle": "Writing is on the way.",
+      "emptySubtitle": "Notes on building AI products, what actually works in production, and where I think AI goes next."
     }
   },
   "chat": {
@@ -77,10 +77,10 @@
     "errorPersistent": "Mhm, seems like there is some issue try again in a few hours"
   },
   "about": {
-    "general": "I'm Adhira (uh-DEER-ah), an innovator, technical builder, and business strategist. With a passion for solving complex problems, I design and deploy AI-driven solutions that are impactful, scalable, and secure. My expertise lies at the intersection of AI engineering and management consulting—driving technological innovation while aligning with business goals to create measurable value.",
-    "currentRole": "Currently, I'm a **Digital Business Analyst at McKinsey & Company**, driving high-impact digital transformation initiatives with a focus on AI and ML strategy, implementation, and client delivery.\n\nPreviously, I was a **Product Manager & Lead AI Developer at Deloitte Consulting** (Defense AI & Engineering), where I led a cross-functional team building secure RAG products on NVIDIA DGX, deployed a federal AI chatbot for 40K+ users, and was recognized with four performance awards.\n\nI also interned at **Amazon** (Kindle ReadON), **Deloitte** as an AI Specialist Summer Analyst, **Cognosos**, and conducted research at the **CLAWS Lab @ Georgia Tech**.",
-    "education": "I earned my **Bachelor of Science in Computer Science with Highest Honors from Georgia Tech**, specializing in **Artificial Intelligence & Human-Computer Interaction**. I completed my degree in **two years at age 19**, served as **Executive VP for AI for Medicine & Healthcare (AIMS)**, and led projects including **Job Scam Prediction** and **Medical Imaging** for Big Data Big Impact.\n\nMy hackathon experience fuels creative problem-solving, with award-winning solutions at **AI ATL** (sponsored by Google, BCG, and Anthropic).",
-    "techStack": "Python, C++, React, AWS, NVIDIA Hardware, LangGraph, Llama-Index, PyTorch, NumPy, and associated libraries/frameworks. I specialize in scalable, secure, real-world AI solutions that drive business transformation."
+    "general": "I'm Adhira (uh-DEER-ah). I build AI products and shape the strategy that scales them, and I understand both from the model architecture up to the business case. For clients, that means I can set the AI direction, prototype the system, lead the team that ships it, and make the case for why it matters to the business. I do this at scale, and I care most about pointing AI at hard, high-stakes problems, in healthcare, the public sector, and the way knowledge work gets done.",
+    "currentRole": "Today I'm a **Tech & AI Business Analyst at McKinsey & Company**, where I shape AI and GenAI strategy and help clients turn ambiguous problems into AI systems that ship and get measured.\n\nBefore McKinsey, I was a **Product Manager and Lead AI Developer at Deloitte** (Defense AI & Engineering). I led a seven-person team building secure retrieval-augmented generation products on NVIDIA DGX, shipped a federal AI chatbot now serving **40,000+ users**, and earned four performance awards.\n\nEarlier, I engineered Kindle features at **Amazon**, worked AI strategy as a summer analyst at **Deloitte**, built full-stack systems at **Cognosos**, and ran machine-learning research at the **CLAWS Lab at Georgia Tech**.",
+    "education": "I earned a **B.S. in Computer Science with Highest Honors from Georgia Tech**, specializing in **Artificial Intelligence and Human-Computer Interaction**, and I finished the degree in **two years, at 19**. I served as **Executive VP of AI for Medicine & Healthcare (AIMS)** and led Big Data Big Impact projects on **job-scam detection** and **medical imaging**.\n\nMy hackathon record includes award-winning work at **AI ATL**, sponsored by Google, BCG, and Anthropic.",
+    "techStack": "Python, C++, React, AWS, NVIDIA hardware, LangGraph, LlamaIndex, PyTorch, and NumPy. I build AI systems that hold up in production: secure, evaluated, and tied to a real outcome."
   },
   "companies": [
     "McKinsey & Company",
@@ -92,7 +92,7 @@
   "gridItems": [
     {
       "id": 1,
-      "title": "Tech enthusiast with a passion for creating AI-Driven Products.",
+      "title": "A builder who ships AI products, and understands them down to the architecture.",
       "description": "",
       "img": "/ai-gen.png"
     },
@@ -104,7 +104,7 @@
     },
     {
       "id": 6,
-      "title": "Looking for a Collaborator? Let's Build Something Game-Changing Together – Reach Out!",
+      "title": "Want to build something ambitious in AI? Let's talk.",
       "description": "",
       "img": "",
       "link": "/chatbot/",
@@ -143,21 +143,16 @@
     { "skill": "Bootstrap", "expertise": 4 },
     { "skill": "LaTeX", "expertise": 3 },
     { "skill": "Machine Learning", "expertise": 4 },
+    { "skill": "Generative AI", "expertise": 5 },
+    { "skill": "RAG Systems", "expertise": 4 },
+    { "skill": "Agentic AI", "expertise": 4 },
+    { "skill": "LangGraph", "expertise": 4 },
+    { "skill": "LLM Evaluation", "expertise": 4 },
     { "skill": "Data Analytics & Visualization", "expertise": 4 },
     { "skill": "Product Management", "expertise": 4 },
-    { "skill": "Problem Solving", "expertise": 5 },
+    { "skill": "AI Strategy", "expertise": 4 },
     { "skill": "User-Centered Design", "expertise": 3 },
-    { "skill": "Strategic Planning", "expertise": 4 },
-    { "skill": "Investing", "expertise": 3 },
-    { "skill": "Visionary", "expertise": 4 },
-    { "skill": "Ambitious", "expertise": 5 },
-    { "skill": "Innovative", "expertise": 4 },
-    { "skill": "Perseverant", "expertise": 5 },
-    { "skill": "Analytical", "expertise": 4 },
-    { "skill": "Entrepreneurial", "expertise": 4 },
-    { "skill": "Problem Solver", "expertise": 5 },
-    { "skill": "Collaborator", "expertise": 4 },
-    { "skill": "Adaptable", "expertise": 4 }
+    { "skill": "Strategic Planning", "expertise": 4 }
   ],
   "workExperience": [
     {
@@ -166,7 +161,7 @@
       "company": "McKinsey & Company",
       "startDate": "June 2025",
       "endDate": "Present",
-      "desc": "- Driving high-impact digital transformation initiatives, with a focus on AI and ML strategy, implementation, and client delivery."
+      "desc": "- Shape AI and ML strategy, then lead delivery, taking GenAI and agentic AI from concept through testing, rollout, and measured business impact."
     },
     {
       "id": 2,
@@ -174,7 +169,7 @@
       "company": "Deloitte",
       "startDate": "September 2024",
       "endDate": "May 2025",
-      "desc": "- Led a cross-functional team of 7 in agile development of a secure, isolated, and trustworthy Retrieval-Augmented Generation (RAG) product using the latest open-source LLMs in a siloed NVIDIA DGX environment.\n- Supported a federal client in deploying their first production-level AI chatbot, expected to serve 40K+ users, by leading AI and backend development.\n- Owned end-to-end system architecture, data flow, and authored both user-facing and technical documentation to support deployment and stakeholder demos.\n- Advanced AI strategy and thought leadership in Bioinformatics and Federal Health through event planning, publications, and internal eminence efforts.\n- Recognized with four performance awards: two Shout Out Awards, an Applause Award, and an Outstanding Performance Award for innovation, delivery, and team leadership."
+      "desc": "- Led a seven-person team building a secure, isolated retrieval-augmented generation (RAG) product on open-source LLMs in a siloed NVIDIA DGX environment.\n- Shipped a federal client's first production AI chatbot, now serving 40,000+ users, owning AI and backend development.\n- Owned system architecture and data flow, and wrote both the user-facing and technical documentation through deployment and stakeholder demos.\n- Advanced the firm's AI work in bioinformatics and federal health through publications, events, and internal eminence.\n- Earned four performance awards (two Shout Out Awards, an Applause Award, and an Outstanding Performance Award) for innovation, delivery, and team leadership."
     },
     {
       "id": 3,
@@ -182,7 +177,7 @@
       "company": "Amazon",
       "startDate": "May 2024",
       "endDate": "August 2024",
-      "desc": "- Worked under the ReadON team at Kindle.\n- Designed & deployed 2 end-to-end Kindle features using C++ & React Native to address user concerns, enhancing navigation & customer experience (CX).\n- Created reusable software components, increasing efficiency by 20%, and wrote unit tests to achieve 90% code coverage.\n- Implemented AWS CloudWatch monitoring & integration testing with Hydra to ensure system robustness & performance."
+      "desc": "- Built and shipped two Kindle features in C++ and React Native on the ReadON team, improving navigation and the customer experience.\n- Created reusable components that cut development time 20%, with unit tests reaching 90% coverage.\n- Added AWS CloudWatch monitoring and Hydra integration testing to harden system performance."
     },
     {
       "id": 4,
@@ -190,7 +185,7 @@
       "company": "Deloitte Consulting",
       "startDate": "June 2023",
       "endDate": "August 2023",
-      "desc": "- Supported AI growth in the Government Public Service sector.\n- Developed generative AI chatbots for Health and Education Departments using BART Transformer Models.\n- Created a Generative AI Analytics Dashboard and co-designed the firm's AI playbook and training."
+      "desc": "- Supported AI growth across government and public-sector accounts.\n- Built generative AI chatbots for health and education departments on BART transformer models.\n- Created a generative-AI analytics dashboard and co-authored the firm's AI playbook and training."
     },
     {
       "id": 5,
@@ -198,7 +193,7 @@
       "company": "Cognosos, Inc.",
       "startDate": "January 2023",
       "endDate": "May 2023",
-      "desc": "- Enhanced modularity of APIs and created 85+ Swagger API documentation entries.\n- Boosted application performance by 25% using AWS EC2 instances and scalable infrastructure.\n- Supported development sprints and adapted to evolving requirements following Agile practices."
+      "desc": "- Improved API modularity and wrote 85+ Swagger documentation entries.\n- Raised application performance 25% with AWS EC2 and scalable infrastructure.\n- Shipped sprint work under Agile as requirements shifted."
     },
     {
       "id": 6,
@@ -206,14 +201,14 @@
       "company": "CLAWS Lab @ Georgia Tech",
       "startDate": "November 2020",
       "endDate": "May 2024",
-      "desc": "- Developed and integrated a web app to a multimodal ML model to study adversarial impacts on classification.\n- Conducted a user experiment and statistical analysis to identify vulnerabilities and improve model performance.\n- Built a dashboard with data visualizations showcasing model performance using responsive web technologies."
+      "desc": "- Built a web app connected to a multimodal ML model to study adversarial effects on classification.\n- Ran a user experiment and statistical analysis to find vulnerabilities and improve model performance.\n- Built a dashboard visualizing model performance with responsive web technologies."
     }
   ],
   "projects": [
     {
       "id": 1,
       "title": "Partnr - Consulting Co-Pilot",
-      "des": "Partnr is a generative AI-powered consulting co-pilot that is trained and fine-tuned on meetings and emails, enabling consultants, managers, and executives to interact with clients smarter and faster.",
+      "des": "A generative-AI consulting co-pilot, fine-tuned on meetings and emails, that lets consultants and executives work through client context faster. First place at AI ATL.",
       "img": "/partnr1.jpg",
       "link": "https://devpost.com/software/partnr-consulting-copilot",
       "stack": ["Python", "React", "AI"]
@@ -221,7 +216,7 @@
     {
       "id": 2,
       "title": "BloodSight AI - Medical Technology Solution",
-      "des": "BloodSight AI enhances medical insight through analytics-driven reports for patients and physicians, providing predictive and preventive analytics with actionable insights.",
+      "des": "Turns blood work and patient data into predictive, preventive health insights for patients and physicians. Recognized through Georgia Tech's Create-X / I2P program.",
       "img": "/BloodSight.png",
       "link": "https://github.com/adhira-ch/bloodsight-ai",
       "stack": ["Python", "PyTorch", "React", "ML"]
@@ -229,7 +224,7 @@
     {
       "id": 3,
       "title": "Seed: Returns Meet Responsibility",
-      "des": "Seed revolutionizes investing by bridging the gap between traditional investing strategies and socially driven investing decisions, enabling investors to make informed, impactful, and ethical choices.",
+      "des": "An investing platform that pairs financial returns with social impact, so investors can act on both at the same time.",
       "img": "/seed.jpeg",
       "link": "https://devfolio.co/projects/seed-ba40",
       "stack": ["React", "JavaScript", "Flask"]
@@ -237,7 +232,7 @@
     {
       "id": 4,
       "title": "van.Go - Custom AI Painting Tutorials",
-      "des": "van.Go allows users to enter a prompt to generate a painting and overlay step-by-step visual instructions, offering interactive, multimodal painting tutorials.",
+      "des": "Generates a painting from a prompt, then overlays step-by-step visual instructions for an interactive, multimodal painting tutorial.",
       "img": "/vanGo.png",
       "link": "https://devpost.com/software/van-go",
       "stack": ["Python", "AI", "React"]
@@ -245,7 +240,7 @@
     {
       "id": 5,
       "title": "tAI: Your AI Teaching Assistant",
-      "des": "tAI is a personalized AI teaching assistant that facilitates multimodal & empathetic education for students and provides professors with actionable insights on their students' engagement & learning.",
+      "des": "A personalized AI teaching assistant: multimodal, empathetic support for students, plus engagement and learning analytics for professors.",
       "img": "/tAI1.jpg",
       "link": "https://devpost.com/software/tai-personalized-teaching-assistant",
       "stack": ["Python", "AI", "React"]
@@ -253,7 +248,7 @@
     {
       "id": 6,
       "title": "Detecting & Locating Findings in ML Screening Mammograms",
-      "des": "Developed an ML model to classify and locate soft tissue findings and microcalcifications in screening mammograms, incorporating ResNet and pre-processing algorithms.",
+      "des": "An ML model that classifies and locates soft-tissue findings and microcalcifications in screening mammograms, built on ResNet with custom preprocessing.",
       "img": "/medicalapp.png",
       "link": "https://www.linkedin.com/company/gtbigdatabigimpact/",
       "stack": ["Python", "PyTorch", "ML"]
@@ -261,7 +256,7 @@
     {
       "id": 7,
       "title": "Data Analysis of Adversarial Attacks on Multimodal Models",
-      "des": "Analyzed the impact of adversarial attacks on multimodal classification models and built a web application to collect and analyze data from 85,000+ Tweets.",
+      "des": "Studied how adversarial attacks affect multimodal classification, with a web app that collected and analyzed 85,000+ tweets.",
       "img": "/dataanalytics.jpg",
       "link": "https://github.com/claws-lab/course-correct",
       "stack": ["Python", "React", "ML"]
@@ -269,7 +264,7 @@
     {
       "id": 8,
       "title": "LEAP Foundation: Leveraging Education & Academics for the Poor",
-      "des": "Led the non-profit organization for 4 years to bridge the gap in childhood education in India. Mobilized 90+ volunteers, raised $900+, and donated $2,000+ in supplies to benefit 300+ children through 5 academic projects and 2 partnerships.",
+      "des": "Led this education nonprofit for four years to widen access to schooling in India: 90+ volunteers, $900+ raised, $2,000+ in donated supplies, and 300+ children reached across five academic projects and two partnerships.",
       "img": "/leap2.png",
       "link": "https://leapfoundationedu.wixsite.com/leap",
       "stack": ["React", "JavaScript"]

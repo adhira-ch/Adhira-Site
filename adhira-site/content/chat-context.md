@@ -84,6 +84,8 @@ Suggested answer:
 
 Adhira Choudhury is a Tech & AI Business Analyst at McKinsey, focused on AI strategy, GenAI and agentic AI, digital transformation, product delivery, and business-tech alignment.
 
+The through-line of her work: she builds AI products and understands them from the model architecture up to the business case that takes them to scale. She can prototype a system, lead the team that ships it, and make the case for why it matters to the business.
+
 She has a technical background in AI engineering, software development, and product management. Before McKinsey, she worked at Deloitte on AI product delivery and R&D, including secure GenAI and RAG applications, and interned at Amazon as a software development engineer on Kindle-related products.
 
 She earned a B.S. in Computer Science with Highest Honors from Georgia Tech, specializing in Artificial Intelligence and Human-Computer Interaction.
