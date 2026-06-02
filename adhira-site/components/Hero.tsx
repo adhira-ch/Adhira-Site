@@ -28,7 +28,15 @@ const Hero = () => {
 
         <div className = "flex justify-center relative my-4 z-10">
           <div className = 'max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-            <img className = "rounded-full mb-4" src={"/profile.png"} alt="icons" width={200} height={200} />
+            <div className="mb-6 rounded-full p-[3px] bg-gradient-to-tr from-purple to-blue-100 shadow-[0_8px_40px_-12px_rgba(203,172,249,0.7)]">
+              <div className="h-40 w-40 md:h-48 md:w-48 rounded-full overflow-hidden bg-black-100">
+                <img
+                  src={"/profile.png"}
+                  alt="Adhira Choudhury"
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+            </div>
             <TypingAnimation
               words={["Business Analyst @ McKinsey Tech & AI", "Tech Entrepreneur", "AI Product Innovator", "Business Strategist", "AI Engineer", "Product Manager", "Technology Consultant", "Software Engineer"]}
               duration={100}
@@ -40,7 +48,7 @@ const Hero = () => {
               className="text-[40px] md:text-5xl text-center"
             />
             <p className="text-center py-4">
-            Building and scaling <b>AI-driven products</b> and strategies. <b>CS & AI</b> from <b>Georgia Tech</b>. Engineering, strategy, and innovation experience at <b>Deloitte, Amazon, Cognosos,</b> and more.
+            I build <b>AI products</b> and the strategy to scale them. <b>CS & AI from Georgia Tech</b> in two years. I&apos;ve shipped a federal GenAI system used by <b>40,000+ people</b>, led AI teams at <b>Deloitte</b>, engineered at <b>Amazon</b>, and now shape AI strategy at <b>McKinsey</b>.
             </p>
             <Link href="/about-me">
                 <MagicButton title="More about me" icon={<FaLocationArrow />} position="right" />

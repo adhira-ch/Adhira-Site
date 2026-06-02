@@ -60,7 +60,7 @@
     "assistantName": "Adhira's Digital Clone",
     "taglinePage": "Trained on Adhira's career, projects, and background",
     "taglineWidget": "Ask anything about Adhira",
-    "welcome": "Hi, I'm Adhira's digital clone, trained on her work and background. I can cover her roles at McKinsey and Deloitte, projects like Partnr and BloodSight AI, Georgia Tech, her interests, and how to reach the real Adhira. Pick a prompt below, or ask your own.",
+    "welcome": "Hi, I'm Adhira's digital clone. Ask me about her work, projects, or background, or pick a prompt below.",
     "widgetHint": "Chat with Adhira's AI twin",
     "suggestedPrompts": [
       "What does Adhira do at McKinsey?",

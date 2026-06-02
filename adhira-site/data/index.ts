@@ -32,7 +32,7 @@ import { desc } from "framer-motion/client";
   export const gridItems = [
     {
       id: 1,
-      title: "Tech enthusiast with a passion for creating AI-Driven Products.",
+      title: "A builder who ships AI products and understands them down to the architecture.",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-3 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -52,7 +52,7 @@ import { desc } from "framer-motion/client";
     },
     {
       id: 6,
-      title: "Looking for a Collaborator? Let’s Build Something Game-Changing Together – Reach Out!",
+      title: "Want to build something ambitious in AI? Let’s talk.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -97,20 +97,20 @@ import { desc } from "framer-motion/client";
   export const workExperience = [
     {
       id: 1,
-      position: "Tech and AI Business Analyst",
+      position: "Tech & AI Business Analyst",
       company: "McKinsey & Company",
       startDate: "June 2025",
       endDate: "Present",
-      desc: "- Driving high-impact digital transformation initiatives, with a focus on AI and ML strategy, implementation, and client delivery",
+      desc: "- Shape AI and ML strategy, then lead delivery, taking GenAI and agentic AI from concept through testing, rollout, and measured business impact.",
       className: "md:col-span-2",
     },
     {
       id: 2,
-      position: "AI & ML Research Solutions Engineer Analyst",
+      position: "Product Manager & Lead AI Developer – Defense AI & Engineering",
       company: "Deloitte",
       startDate: "September 2024",
       endDate: "May 2025",
-      desc: "- Leading a team of 7 in development of an isolated secure and trustworthy RAG product with the newest and most powerful open-source large language models and a siloed closed NVIDIA DGX environment.\n- Managed the end-to-end architecture and data flow of the trustworthy RAG product and led the development of user and technical documentation to support the deployment and demos of the system built.\n- Supporting eminence, events, and strategy development of AI in the Bioinformatics and Federal Health space.",
+      desc: "- Led a seven-person team building a secure, isolated retrieval-augmented generation (RAG) product on open-source LLMs in a siloed NVIDIA DGX environment.\n- Shipped a federal client's first production AI chatbot, now serving 40,000+ users, owning AI and backend development.\n- Owned system architecture and data flow, and wrote both the user-facing and technical documentation through deployment and stakeholder demos.\n- Advanced the firm's AI work in bioinformatics and federal health through publications, events, and internal eminence.\n- Earned four performance awards (two Shout Out Awards, an Applause Award, and an Outstanding Performance Award) for innovation, delivery, and team leadership.",
       className: "md:col-span-2",
     },
     {
@@ -119,7 +119,7 @@ import { desc } from "framer-motion/client";
       company: "Amazon",
       startDate: "May 2024",
       endDate: "August 2024",
-      desc: "- Worked under the ReadON team at Kindle.\n- Designed & deployed 2 end-to-end Kindle features using C++ & React Native to address user concerns, enhancing navigation & customer experience (CX).\n- Created reusable software components, increasing efficiency by 20%, and wrote unit tests to achieve 90% code coverage.\n- Implemented AWS CloudWatch monitoring & integration testing with Hydra to ensure system robustness & performance.",
+      desc: "- Built and shipped two Kindle features in C++ and React Native on the ReadON team, improving navigation and the customer experience.\n- Created reusable components that cut development time 20%, with unit tests reaching 90% coverage.\n- Added AWS CloudWatch monitoring and Hydra integration testing to harden system performance.",
       className: "md:col-span-2",
     },
     {
@@ -128,7 +128,7 @@ import { desc } from "framer-motion/client";
       company: "Deloitte Consulting",
       startDate: "June 2023",
       endDate: "August 2023",
-      desc: "- Supported AI growth in the Government Public Service sector.\n- Developed generative AI chatbots for Health and Education Departments using BART Transformer Models.\n- Created a Generative AI Analytics Dashboard and co-designed the firm's AI playbook and training.",
+      desc: "- Supported AI growth across government and public-sector accounts.\n- Built generative AI chatbots for health and education departments on BART transformer models.\n- Created a generative-AI analytics dashboard and co-authored the firm's AI playbook and training.",
       className: "md:col-span-2",
     },
     {
@@ -137,7 +137,7 @@ import { desc } from "framer-motion/client";
       company: "Cognosos, Inc.",
       startDate: "January 2023",
       endDate: "May 2023",
-      desc: "- Enhanced modularity of APIs and created 85+ Swagger API documentation entries.\n- Boosted application performance by 25% using AWS EC2 instances and scalable infrastructure.\n- Supported development sprints and adapted to evolving requirements following Agile practices.",
+      desc: "- Improved API modularity and wrote 85+ Swagger documentation entries.\n- Raised application performance 25% with AWS EC2 and scalable infrastructure.\n- Shipped sprint work under Agile as requirements shifted.",
       className: "md:col-span-2",
     },
     {
@@ -146,7 +146,7 @@ import { desc } from "framer-motion/client";
       company: "CLAWS Lab @ Georgia Tech",
       startDate: "November 2020",
       endDate: "May 2024",
-      desc: "- Developed and integrated a web app to a multimodal ML model to study adversarial impacts on classification.\n- Conducted a user experiment and statistical analysis to identify vulnerabilities and improve model performance.\n- Built a dashboard with data visualizations showcasing model performance using responsive web technologies.",
+      desc: "- Built a web app connected to a multimodal ML model to study adversarial effects on classification.\n- Ran a user experiment and statistical analysis to find vulnerabilities and improve model performance.\n- Built a dashboard visualizing model performance with responsive web technologies.",
       className: "md:col-span-2",
     },
   ];
@@ -156,7 +156,7 @@ import { desc } from "framer-motion/client";
     {
       id: 1,
       title: "Partnr - Consulting Co-Pilot",
-      des: "Partnr is a generative AI-powered consulting co-pilot that is trained and fine-tuned on meetings and emails, enabling consultants, managers, and executives to interact with clients smarter and faster.",
+      des: "A generative-AI consulting co-pilot, fine-tuned on meetings and emails, that lets consultants and executives work through client context faster. First place at AI ATL.",
       img: "/partnr1.jpg",
       iconLists: ["/flask.svg", "/python.svg", "/llama-index.png", "/langchain.png", "/reactjs.svg", "/nodejs.svg", "/tailwind.svg", "/huggingface.svg"],
       link: "https://devpost.com/software/partnr-consulting-copilot",
@@ -164,7 +164,7 @@ import { desc } from "framer-motion/client";
     {
       id: 2,
       title: "BloodSight AI - Medical Technology Solution",
-      des: "BloodSight AI enhances medical insight through analytics-driven reports for patients and physicians, providing predictive and preventive analytics with actionable insights.",
+      des: "Turns blood work and patient data into predictive, preventive health insights for patients and physicians. Recognized through Georgia Tech's Create-X / I2P program.",
       img: "/BloodSight.png",
       iconLists: ["/figma.svg", "/python.svg", "/langchain.png", "/reactjs.svg", "/openai.svg", "/random-forest.png"],
       link: "https://github.com/adhira-ch/bloodsight-ai",
@@ -172,7 +172,7 @@ import { desc } from "framer-motion/client";
     {
       id: 3,
       title: "Seed: Returns Meet Responsibility",
-      des: "Seed revolutionizes investing by bridging the gap between traditional investing strategies and socially driven investing decisions, enabling investors to make informed, impactful, and ethical choices.",
+      des: "An investing platform that pairs financial returns with social impact, so investors can act on both at the same time.",
       img: "/seed.jpeg",
       iconLists: ["/python.svg", "/scikit-learn.png", "/openai.svg", "/microsoftazure.svg", "/reactjs.svg", "/streamlit.svg"],
       link: "https://devfolio.co/projects/seed-ba40",
@@ -180,7 +180,7 @@ import { desc } from "framer-motion/client";
     {
       id: 4,
       title: "van.Go - Custom AI Painting Tutorials",
-      des: "van.Go allows users to enter a prompt to generate a painting and overlay step-by-step visual instructions, offering interactive, multimodal painting tutorials.",
+      des: "Generates a painting from a prompt, then overlays step-by-step visual instructions for an interactive, multimodal painting tutorial.",
       img: "/vanGo.png",
       iconLists: ["/opencv.png", "/flask.svg", "/python.svg", "/langchain.png", "/reactjs.svg", "/nodejs.svg", "/openai.svg", "/openai.svg"],
       link: "https://devpost.com/software/van-go",
@@ -188,7 +188,7 @@ import { desc } from "framer-motion/client";
     {
       id: 5,
       title: "tAI: Your AI Teaching Assistant",
-      des: "tAI is a personalized AI teaching assistant that facilitates multimodal & empathetic education for students and provides professors with actionable insights on their students' engagement & learning.",
+      des: "A personalized AI teaching assistant: multimodal, empathetic support for students, plus engagement and learning analytics for professors.",
       img: "/tAI1.jpg",
       iconLists: ["/next.svg"],
       link: "https://devpost.com/software/tai-personalized-teaching-assistant",
@@ -196,7 +196,7 @@ import { desc } from "framer-motion/client";
     {
       id: 6,
       title: "Detecting & Locating Findings in ML Screening Mammograms",
-      des: "Developed an ML model to classify and locate soft tissue findings and microcalcifications in screening mammograms, incorporating ResNet and pre-processing algorithms.",
+      des: "An ML model that classifies and locates soft-tissue findings and microcalcifications in screening mammograms, built on ResNet with custom preprocessing.",
       img: "/medicalapp.png",
       iconLists: ["/python.svg", "/opencv.png", "/scikit-learn.png", "/tensorflow.svg"],
       link: "https://github.com/",
@@ -204,7 +204,7 @@ import { desc } from "framer-motion/client";
     {
       id: 7,
       title: "Data Analysis of Adversarial Attacks on Multimodal Models",
-      des: "Analyzed the impact of adversarial attacks on multimodal classification models and built a web application to collect and analyze data from 85,000+ Tweets.",
+      des: "Studied how adversarial attacks affect multimodal classification, with a web app that collected and analyzed 85,000+ tweets.",
       img: "/dataanalytics.jpg",
       iconLists: ["/python.svg", "/streamlit.svg"],
       link: "https://github.com/",
@@ -212,7 +212,7 @@ import { desc } from "framer-motion/client";
     {
       id: 8,
       title: "LEAP Foundation: Leveraging Education & Academics for the Poor",
-      des: "Led the non-profit organization for 4 years to bridge the gap in childhood education in India, providing resources and support to underprivileged students. Mobilized 90+ volunteers, raised $900+, and donated $2,000+ in supplies to benefit 300+ children through 5 academic projects and 2 partnerships, overseeing operations and driving business growth and marketing strategies.",
+      des: "Led this education nonprofit for four years to widen access to schooling in India: 90+ volunteers, $900+ raised, $2,000+ in donated supplies, and 300+ children reached across five academic projects and two partnerships.",
       img: "/leap2.png",
       iconLists: [],
       link: "https://leapfoundationedu.wixsite.com/leap"
@@ -264,19 +264,14 @@ import { desc } from "framer-motion/client";
     { skill: "Bootstrap", expertise: 4 },
     { skill: "LaTeX", expertise: 3 },
     { skill: "Machine Learning", expertise: 4 },
+    { skill: "Generative AI", expertise: 5 },
+    { skill: "RAG Systems", expertise: 4 },
+    { skill: "Agentic AI", expertise: 4 },
+    { skill: "LangGraph", expertise: 4 },
+    { skill: "LLM Evaluation", expertise: 4 },
     { skill: "Data Analytics & Visualization", expertise: 4 },
     { skill: "Product Management", expertise: 4 },
-    { skill: "Problem Solving", expertise: 5 },
+    { skill: "AI Strategy", expertise: 4 },
     { skill: "User-Centered Design", expertise: 3 },
     { skill: "Strategic Planning", expertise: 4 },
-    { skill: "Investing", expertise: 3 },
-    { skill: "Visionary", expertise: 4 },
-    { skill: "Ambitious", expertise: 5 },
-    { skill: "Innovative", expertise: 4 },
-    { skill: "Perseverant", expertise: 5 },
-    { skill: "Analytical", expertise: 4 },
-    { skill: "Entrepreneurial", expertise: 4 },
-    { skill: "Problem Solver", expertise: 5 },
-    { skill: "Collaborator", expertise: 4 },
-    { skill: "Adaptable", expertise: 4 },
   ];
