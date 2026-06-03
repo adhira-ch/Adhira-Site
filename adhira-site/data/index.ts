@@ -33,7 +33,7 @@ import { desc } from "framer-motion/client";
     {
       id: 3,
       title: "Past organizations I've worked with",
-      description: "Experience",
+      description: "Currently: Tech & AI Business Analyst at McKinsey & Company",
       className: "lg:col-span-3 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
