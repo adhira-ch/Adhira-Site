@@ -10,7 +10,7 @@
   },
   "hero": {
     "photo": "/profile.png",
-    "bio": "I build **AI products**, and the strategy to scale them. **Georgia Tech CS & AI** in two years. Shipped a federal GenAI system to **40,000+ users**. Led AI teams at **Deloitte**. Engineered at **Amazon**. Now shaping AI strategy at **McKinsey**.",
+    "bio": "Building the strategies and **AI products** that help businesses transform for what's next. Today, I work across **AI strategy, business transformation, and product development**; long term, I'm building toward **leading AI-driven businesses at scale**.",
     "ctaLabel": "More about me",
     "ctaLink": "/about/"
   },
@@ -92,19 +92,19 @@
   "gridItems": [
     {
       "id": 1,
-      "title": "A builder who ships AI products and understands them down to the architecture.",
+      "title": "Equally at home in the boardroom and the codebase, I build AI products down to the architecture.",
       "description": "",
       "img": "/ai-gen.png"
     },
     {
       "id": 3,
-      "title": "Past Companies I've Worked At",
-      "description": "Work Experience",
+      "title": "Past organizations I've worked with",
+      "description": "Experience",
       "img": ""
     },
     {
       "id": 6,
-      "title": "Want to build something ambitious in AI? Let's talk.",
+      "title": "Want to talk about the next revolutionary startup or the coolest AI use case you've seen? Let's talk.",
       "description": "",
       "img": "",
       "link": "/chatbot/",

@@ -32,7 +32,7 @@ import { desc } from "framer-motion/client";
   export const gridItems = [
     {
       id: 1,
-      title: "A builder who ships AI products and understands them down to the architecture.",
+      title: "Equally at home in the boardroom and the codebase, I build AI products down to the architecture.",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-3 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -42,8 +42,8 @@ import { desc } from "framer-motion/client";
     },
     {
       id: 3,
-      title: "Past Companies I've Worked At",
-      description: "Work Experience",
+      title: "Past organizations I've worked with",
+      description: "Experience",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -52,7 +52,7 @@ import { desc } from "framer-motion/client";
     },
     {
       id: 6,
-      title: "Want to build something ambitious in AI? Let’s talk.",
+      title: "Want to talk about the next revolutionary startup or the coolest AI use case you've seen? Let's talk.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",

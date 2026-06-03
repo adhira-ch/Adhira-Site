@@ -48,7 +48,7 @@ const Hero = () => {
               className="text-[40px] md:text-5xl text-center"
             />
             <p className="text-center py-4">
-            I build <b>AI products</b>, and the strategy to scale them. <b>Georgia Tech CS & AI</b> in two years. Shipped a federal GenAI system to <b>40,000+ users</b>. Led AI teams at <b>Deloitte</b>. Engineered at <b>Amazon</b>. Now shaping AI strategy at <b>McKinsey</b>.
+            Building the strategies and <b>AI products</b> that help businesses transform for what&apos;s next. Today, I work across <b>AI strategy, business transformation, and product development</b>; long term, I&apos;m building toward <b>leading AI-driven businesses at scale</b>.
             </p>
             <Link href="/about-me">
                 <MagicButton title="More about me" icon={<FaLocationArrow />} position="right" />
