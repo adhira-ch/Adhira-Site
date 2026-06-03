@@ -31,20 +31,10 @@ import { desc } from "framer-motion/client";
   ];
   export const gridItems = [
     {
-      id: 1,
-      title: "Equally at home in the boardroom and the codebase, I build AI products down to the architecture.",
-      description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-3 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
-      img: "/ai-gen.png",
-      spareImg: "",
-    },
-    {
       id: 3,
       title: "Past organizations I've worked with",
       description: "Experience",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+      className: "lg:col-span-3 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
       img: "",
