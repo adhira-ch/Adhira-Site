@@ -6,6 +6,7 @@ const LOG_FILE = path.join(LOG_DIR, "chat.log");
 
 export type ChatLogEntry = {
   question: string;
+  answer?: string;
   mode: "gemini" | "local";
   status: "ok" | "error";
   latencyMs: number;

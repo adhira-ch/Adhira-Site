@@ -73,6 +73,7 @@ export async function POST(req: NextRequest) {
     const reply = getLocalChatReply(lastUser.content);
     await logChatInteraction({
       question,
+      answer: reply,
       mode: "local",
       status: "ok",
       latencyMs: Math.round(performance.now() - startedAt),
@@ -114,6 +115,7 @@ export async function POST(req: NextRequest) {
 
     await logChatInteraction({
       question,
+      answer: reply,
       mode: "gemini",
       status: "ok",
       latencyMs: Math.round(performance.now() - startedAt),
