@@ -132,7 +132,13 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div
+      className={cn(
+        "relative block md:hidden",
+        className,
+        "fixed bottom-6 left-6 right-auto z-[5000]"
+      )}
+    >
       <AnimatePresence>
         {open && (
           <motion.div
@@ -179,9 +185,10 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
+        aria-label="Open navigation menu"
+        className="h-12 w-12 rounded-full bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-white/[0.2] shadow-lg flex items-center justify-center"
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-white dark:text-neutral-400" />
+        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-700 dark:text-neutral-200" />
       </button>
     </div>
   );

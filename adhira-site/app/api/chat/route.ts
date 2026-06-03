@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenerativeAI, type Content } from "@google/generative-ai";
 import { buildGeminiSystemPrompt } from "@/lib/chat-context.server";
 import { getLocalChatReply } from "@/lib/chat-local.server";
+import { logChatInteraction } from "@/lib/chat-logger.server";
 
 export const runtime = "nodejs";
 
@@ -65,12 +66,19 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "No user message found" }, { status: 400 });
   }
 
+  const question = lastUser.content.trim();
   const apiKey = process.env.GEMINI_API_KEY?.trim();
   if (!apiKey) {
-    return NextResponse.json({
-      reply: getLocalChatReply(lastUser.content),
+    const startedAt = performance.now();
+    const reply = getLocalChatReply(lastUser.content);
+    await logChatInteraction({
+      question,
       mode: "local",
+      status: "ok",
+      latencyMs: Math.round(performance.now() - startedAt),
+      responseChars: reply.length,
     });
+    return NextResponse.json({ reply, mode: "local" });
   }
 
   const modelName = process.env.GEMINI_MODEL ?? DEFAULT_GEMINI_MODEL;
@@ -86,28 +94,44 @@ export async function POST(req: NextRequest) {
   });
 
   const history = buildGeminiHistory(messages);
+  const startedAt = performance.now();
 
   try {
     let reply: string;
 
     if (history.length === 0) {
-      const result = await model.generateContent(lastUser.content.trim());
+      const result = await model.generateContent(question);
       reply =
         result.response.text()?.trim() ??
         "I couldn't generate a response. Please try again.";
     } else {
       const chatSession = model.startChat({ history });
-      const result = await chatSession.sendMessage(lastUser.content.trim());
+      const result = await chatSession.sendMessage(question);
       reply =
         result.response.text()?.trim() ??
         "I couldn't generate a response. Please try again.";
     }
+
+    await logChatInteraction({
+      question,
+      mode: "gemini",
+      status: "ok",
+      latencyMs: Math.round(performance.now() - startedAt),
+      responseChars: reply.length,
+    });
 
     return NextResponse.json({ reply, mode: "gemini" });
   } catch (err) {
     console.error("Gemini error:", err);
     const message =
       err instanceof Error ? err.message : "Failed to generate response";
+    await logChatInteraction({
+      question,
+      mode: "gemini",
+      status: "error",
+      latencyMs: Math.round(performance.now() - startedAt),
+      error: message,
+    });
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }

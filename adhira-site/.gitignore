@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# chat logs
+/logs
+
 # next.js
 /.next/
 /out/
