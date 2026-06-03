@@ -31,10 +31,20 @@ import { desc } from "framer-motion/client";
   ];
   export const gridItems = [
     {
+      id: 1,
+      title: "Tech & AI Business Analyst at McKinsey & Company",
+      description: "Currently",
+      className: "lg:col-span-3 md:col-span-6 md:row-span-3 lg:min-h-[60vh]",
+      imgClassName: "w-full h-full",
+      titleClassName: "justify-end",
+      img: "",
+      spareImg: "",
+    },
+    {
       id: 3,
       title: "Past organizations I've worked with",
-      description: "Currently: Tech & AI Business Analyst at McKinsey & Company",
-      className: "lg:col-span-3 md:col-span-3 md:row-span-2",
+      description: "Experience",
+      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
       img: "",

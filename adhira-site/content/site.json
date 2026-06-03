@@ -91,9 +91,15 @@
   ],
   "gridItems": [
     {
+      "id": 1,
+      "title": "Tech & AI Business Analyst at McKinsey & Company",
+      "description": "Currently",
+      "img": ""
+    },
+    {
       "id": 3,
       "title": "Past organizations I've worked with",
-      "description": "Currently: Tech & AI Business Analyst at McKinsey & Company",
+      "description": "Experience",
       "img": ""
     },
     {
