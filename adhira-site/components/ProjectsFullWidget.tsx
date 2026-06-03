@@ -21,8 +21,8 @@ const ProjectsFullWidget = () => {
             <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
         </div>
       <h1 className="heading">
-        An overview of {" "}
-        <span className="text-purple">recent projects</span>
+        Things I&apos;ve {" "}
+        <span className="text-purple">built</span>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5 pt-12 w-full">
         {projects.map((item) => (

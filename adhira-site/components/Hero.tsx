@@ -38,7 +38,7 @@ const Hero = () => {
               </div>
             </div>
             <TypingAnimation
-              words={["Business Analyst @ McKinsey Tech & AI", "Tech Entrepreneur", "AI Product Innovator", "Business Strategist", "AI Engineer", "Product Manager", "Technology Consultant", "Software Engineer"]}
+              words={["Tech & AI @ McKinsey", "AI Product Builder", "AI Strategist", "AI Engineer", "Technical Product Lead", "Builder at Heart"]}
               duration={100}
               delay={500}
               className={"uppercase tracking-widest text-xs text-center dark:text-blue-100 max-w-80 min-h-5"}
@@ -48,7 +48,7 @@ const Hero = () => {
               className="text-[40px] md:text-5xl text-center"
             />
             <p className="text-center py-4">
-            I build <b>AI products</b> and the strategy to scale them. <b>CS & AI from Georgia Tech</b> in two years. I&apos;ve shipped a federal GenAI system used by <b>40,000+ people</b>, led AI teams at <b>Deloitte</b>, engineered at <b>Amazon</b>, and now shape AI strategy at <b>McKinsey</b>.
+            I build <b>AI products</b>, and the strategy to scale them. <b>Georgia Tech CS & AI</b> in two years. Shipped a federal GenAI system to <b>40,000+ users</b>. Led AI teams at <b>Deloitte</b>. Engineered at <b>Amazon</b>. Now shaping AI strategy at <b>McKinsey</b>.
             </p>
             <Link href="/about-me">
                 <MagicButton title="More about me" icon={<FaLocationArrow />} position="right" />

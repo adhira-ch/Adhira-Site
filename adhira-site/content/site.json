@@ -10,7 +10,7 @@
   },
   "hero": {
     "photo": "/profile.png",
-    "bio": "I build **AI products** and the strategy to scale them. **CS & AI from Georgia Tech** in two years. I've shipped a federal GenAI system used by **40,000+ people**, led AI teams at **Deloitte**, engineered at **Amazon**, and now shape AI strategy at **McKinsey**.",
+    "bio": "I build **AI products**, and the strategy to scale them. **Georgia Tech CS & AI** in two years. Shipped a federal GenAI system to **40,000+ users**. Led AI teams at **Deloitte**. Engineered at **Amazon**. Now shaping AI strategy at **McKinsey**.",
     "ctaLabel": "More about me",
     "ctaLink": "/about/"
   },

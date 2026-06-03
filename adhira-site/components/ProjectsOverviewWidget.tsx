@@ -78,7 +78,7 @@ const ProjectsOverview = () => {
       <div className="flex flex-wrap items-center justify-center pt-10">
         <Link href="/projects">
           <MagicButton
-            title="Learn More About My Projects"
+            title="See all projects"
             icon={<FaLocationArrow />}
             position="right"
           />

@@ -66,8 +66,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
       <h1 className="heading">
-        An overview of{" "}
-        <span className="text-purple">Adhira&apos;s Work Experience</span>
+        Where I&apos;ve{" "}
+        <span className="text-purple">worked</span>
       </h1>
       <div
         className="w-full bg-white dark:bg-black-100 font-sans md:px-10"

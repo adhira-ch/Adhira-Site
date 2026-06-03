@@ -14,7 +14,7 @@ const Footer = () => {
 
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2025 Adhira Choudhury
+          Copyright © 2026 Adhira Choudhury
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

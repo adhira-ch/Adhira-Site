@@ -174,7 +174,7 @@ import { desc } from "framer-motion/client";
       title: "Seed: Returns Meet Responsibility",
       des: "An investing platform that pairs financial returns with social impact, so investors can act on both at the same time.",
       img: "/seed.jpeg",
-      iconLists: ["/python.svg", "/scikit-learn.png", "/openai.svg", "/microsoftazure.svg", "/reactjs.svg", "/streamlit.svg"],
+      iconLists: ["/python.svg", "/scikit-learn.png", "/openai.svg", "/reactjs.svg", "/streamlit.svg"],
       link: "https://devfolio.co/projects/seed-ba40",
     },
     {
